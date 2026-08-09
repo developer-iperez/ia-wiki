@@ -44,6 +44,7 @@ npx skills add rohitg00/agentmemory  # instala 15 skills nativos
 - [[claude/claude-code|Claude Code]] — uno de los agentes soportados.
 - [[tools/claude-mem|claude-mem]] — mismo objetivo (memoria persistente entre sesiones); agentmemory añade búsqueda híbrida con grafos de conocimiento y un visor en tiempo real.
 - [[tools/headroom|headroom]] — optimización complementaria: comprime lo que entra en la sesión, no lo que persiste entre sesiones.
+- [[tools/codeburn|codeburn]] — para medir el ahorro real conseguido con agentmemory y otras optimizaciones.
 
 Sources:
 - [rohitg00/agentmemory en GitHub](https://github.com/rohitg00/agentmemory)

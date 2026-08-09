@@ -56,6 +56,7 @@ rtk init -g          # configura el hook para Claude Code / Copilot (por defecto
 - [[claude/comandos|Comandos útiles de Claude Code]] — comandos como `/cost` para medir consumo; `rtk` lo reduce de forma proactiva.
 - [[tools/claude-mem|claude-mem]] — ahorro de tokens complementario, pero entre sesiones en vez de en la salida de comandos.
 - [[tools/headroom|headroom]] — enfoque más amplio: comprime también JSON, ficheros y RAG, no solo la salida de bash.
+- [[tools/codeburn|codeburn]] — complementario: no comprime, mide el consumo y detecta dónde se desperdician tokens.
 
 Sources:
 - [rtk-ai/rtk en GitHub](https://github.com/rtk-ai/rtk)

@@ -31,6 +31,7 @@ Claude Code pide confirmación antes de ejecutar acciones potencialmente sensibl
 - [[tools/claude-mem|claude-mem]] — para dar continuidad de contexto entre sesiones
 - [[tools/headroom|headroom]] — para comprimir tool outputs, ficheros y RAG antes de que lleguen al modelo
 - [[tools/agentmemory|agentmemory]] — alternativa a claude-mem para dar continuidad de contexto entre sesiones
+- [[tools/codeburn|codeburn]] — para medir el consumo de tokens y coste de las sesiones
 
 ## Uso desde el móvil (Claude Code Cloud)
 

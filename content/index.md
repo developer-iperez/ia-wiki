@@ -20,3 +20,4 @@ Bienvenido a mi wiki de notas.
 - [[tools/claude-mem|claude-mem]]
 - [[tools/headroom|headroom]]
 - [[tools/agentmemory|agentmemory]]
+- [[tools/codeburn|codeburn]]
