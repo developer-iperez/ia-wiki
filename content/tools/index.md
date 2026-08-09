@@ -10,3 +10,4 @@ Herramientas para ahorrar tokens y optimizar procesos con Claude/IA.
 - [[tools/agentmemory|agentmemory]]
 - [[tools/codeburn|codeburn]]
 - [[tools/caveman|caveman]]
+- [[tools/llm-router|llm-router]]

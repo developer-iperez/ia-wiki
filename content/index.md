@@ -24,3 +24,4 @@ Bienvenido a mi wiki de notas.
 - [[tools/agentmemory|agentmemory]]
 - [[tools/codeburn|codeburn]]
 - [[tools/caveman|caveman]]
+- [[tools/llm-router|llm-router]]
