@@ -1,6 +1,9 @@
 ---
-title: Welcome to Quartz
+title: IA wiki
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Bienvenido a mi wiki de notas.
+
+## Notas
+
+- [[claude-code|Claude Code]]
