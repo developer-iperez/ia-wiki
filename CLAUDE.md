@@ -47,4 +47,4 @@ npx quartz build           # compilar (el mismo comando que ejecuta el CI)
 3. Guardar como nota nueva (o actualizar una existente) en `content/`, siguiendo las convenciones de arriba.
 4. Enlazar la nota desde `content/index.md` (o desde una nota ya alcanzable desde la portada).
 5. `git add content/... && git commit`.
-6. El `git push` requiere confirmación del usuario (ver `.claude/settings.json`); en cuanto llega a `main`, el Action publica el sitio en 1–2 minutos.
+6. **Publica siempre directamente en `main`** (sin pedir confirmación previa ni abrir pull request, salvo que el usuario pida explícitamente lo contrario): `git push origin HEAD:main`. En cuanto el push llega a `main`, el Action publica el sitio en 1–2 minutos.
