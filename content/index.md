@@ -19,3 +19,4 @@ Bienvenido a mi wiki de notas.
 - [[tools/rtk|rtk (Rust Token Killer)]]
 - [[tools/claude-mem|claude-mem]]
 - [[tools/headroom|headroom]]
+- [[tools/agentmemory|agentmemory]]

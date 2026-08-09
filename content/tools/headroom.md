@@ -49,6 +49,7 @@ Requiere Python ≥ 3.10.
 - [[claude/claude-code|Claude Code]] — uno de los agentes soportados vía wrapper.
 - [[tools/rtk|rtk (Rust Token Killer)]] — optimización similar pero centrada solo en la salida de comandos de terminal; headroom cubre además JSON, ficheros y RAG.
 - [[tools/claude-mem|claude-mem]] — ahorro complementario entre sesiones, en vez de en el contenido que se envía dentro de una sesión.
+- [[tools/agentmemory|agentmemory]] — otra opción de memoria persistente entre sesiones, con búsqueda híbrida y grafos de conocimiento.
 
 Sources:
 - [headroomlabs-ai/headroom en GitHub](https://github.com/headroomlabs-ai/headroom)

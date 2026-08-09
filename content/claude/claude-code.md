@@ -30,6 +30,7 @@ Claude Code pide confirmación antes de ejecutar acciones potencialmente sensibl
 - [[tools/rtk|rtk (Rust Token Killer)]] — para reducir el consumo de tokens de las sesiones
 - [[tools/claude-mem|claude-mem]] — para dar continuidad de contexto entre sesiones
 - [[tools/headroom|headroom]] — para comprimir tool outputs, ficheros y RAG antes de que lleguen al modelo
+- [[tools/agentmemory|agentmemory]] — alternativa a claude-mem para dar continuidad de contexto entre sesiones
 
 ## Uso desde el móvil (Claude Code Cloud)
 

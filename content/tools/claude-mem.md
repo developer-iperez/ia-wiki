@@ -51,6 +51,7 @@ npx claude-mem install --ide antigravity    # Antigravity CLI
 - [[claude/claude-code|Claude Code]] — agente principal para el que está pensado.
 - [[tools/rtk|rtk (Rust Token Killer)]] — optimización complementaria: rtk reduce tokens en la salida de comandos dentro de una sesión, claude-mem reduce tokens de contexto entre sesiones.
 - [[tools/headroom|headroom]] — comprime lo que entra a la sesión (tool outputs, ficheros, RAG); claude-mem comprime lo que persiste entre sesiones.
+- [[tools/agentmemory|agentmemory]] — mismo objetivo (memoria persistente), con búsqueda híbrida (BM25 + vectorial + grafos de conocimiento) y visor en tiempo real.
 
 Sources:
 - [thedotmack/claude-mem en GitHub](https://github.com/thedotmack/claude-mem)
