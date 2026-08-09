@@ -26,6 +26,7 @@ Claude Code pide confirmación antes de ejecutar acciones potencialmente sensibl
 ## Ver también
 
 - [[claude/comandos|Comandos útiles de Claude Code]]
+- [[claude/skills|Skills de Claude]]
 
 ## Uso desde el móvil (Claude Code Cloud)
 
