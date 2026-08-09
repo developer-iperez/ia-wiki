@@ -23,6 +23,10 @@ Claude Code es la herramienta de codificación agéntica de Anthropic que corre 
 
 Claude Code pide confirmación antes de ejecutar acciones potencialmente sensibles (editar archivos, ejecutar comandos, hacer push). Esos permisos se pueden acotar por proyecto en `.claude/settings.json`, definiendo qué herramientas/comandos se permiten sin preguntar, cuáles requieren aprobación y cuáles quedan bloqueados — así es como este repositorio limita las sesiones cloud a escribir solo dentro de `content/`.
 
+## Ver también
+
+- [[claude/comandos|Comandos útiles de Claude Code]]
+
 ## Uso desde el móvil (Claude Code Cloud)
 
 La app de Claude (pestaña *Code*) permite lanzar sesiones de Claude Code en la nube sobre un repositorio de GitHub sin necesidad de un ordenador: la sesión clona el repo, trabaja de forma autónoma (puede seguir corriendo aunque se cierre la app) y al terminar el usuario revisa el diff y aprueba el `git push` desde el móvil.
