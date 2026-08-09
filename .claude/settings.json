@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(content/**)",
+      "Edit(content/**)",
+      "Write(content/**)",
+      "Glob(content/**)",
+      "Grep(content/**)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git add content/*)",
+      "Bash(git commit:*)",
+      "Bash(git log:*)",
+      "WebSearch",
+      "WebFetch"
+    ],
+    "ask": [
+      "Bash(git push:*)"
+    ],
+    "deny": [
+      "Edit(quartz/**)",
+      "Write(quartz/**)",
+      "Edit(quartz.config.yaml)",
+      "Write(quartz.config.yaml)",
+      "Edit(quartz.ts)",
+      "Write(quartz.ts)",
+      "Edit(.github/**)",
+      "Write(.github/**)",
+      "Edit(.claude/**)",
+      "Write(.claude/**)"
+    ]
+  }
+}
