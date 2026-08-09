@@ -8,6 +8,8 @@ Bienvenido a mi wiki de notas.
 
 - [[claude-code|Claude Code]]
 - [[claude/skills|Skills de Claude]]
+- [[claude/claude-code-guide-zebbern|Claude Code Guide (zebbern)]]
+- [[claude/claude-code-everything|Claude Code: Everything You Need to Know]]
 
 ## Modelos LLM open source (ejecución local)
 
