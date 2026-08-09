@@ -21,3 +21,4 @@ Bienvenido a mi wiki de notas.
 - [[tools/headroom|headroom]]
 - [[tools/agentmemory|agentmemory]]
 - [[tools/codeburn|codeburn]]
+- [[tools/caveman|caveman]]

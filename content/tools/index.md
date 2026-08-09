@@ -9,3 +9,4 @@ Herramientas para ahorrar tokens y optimizar procesos con Claude/IA.
 - [[tools/headroom|headroom]]
 - [[tools/agentmemory|agentmemory]]
 - [[tools/codeburn|codeburn]]
+- [[tools/caveman|caveman]]
