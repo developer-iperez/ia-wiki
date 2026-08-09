@@ -28,6 +28,7 @@ Claude Code pide confirmación antes de ejecutar acciones potencialmente sensibl
 - [[claude/comandos|Comandos útiles de Claude Code]]
 - [[claude/skills|Skills de Claude]]
 - [[tools/rtk|rtk (Rust Token Killer)]] — para reducir el consumo de tokens de las sesiones
+- [[tools/claude-mem|claude-mem]] — para dar continuidad de contexto entre sesiones
 
 ## Uso desde el móvil (Claude Code Cloud)
 

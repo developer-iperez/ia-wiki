@@ -17,3 +17,4 @@ Bienvenido a mi wiki de notas.
 ## Herramientas (ahorro de tokens / optimización de Claude e IA)
 
 - [[tools/rtk|rtk (Rust Token Killer)]]
+- [[tools/claude-mem|claude-mem]]

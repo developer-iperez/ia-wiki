@@ -54,6 +54,7 @@ rtk init -g          # configura el hook para Claude Code / Copilot (por defecto
 
 - [[claude/claude-code|Claude Code]] — uno de los agentes con los que se integra vía hook.
 - [[claude/comandos|Comandos útiles de Claude Code]] — comandos como `/cost` para medir consumo; `rtk` lo reduce de forma proactiva.
+- [[tools/claude-mem|claude-mem]] — ahorro de tokens complementario, pero entre sesiones en vez de en la salida de comandos.
 
 Sources:
 - [rtk-ai/rtk en GitHub](https://github.com/rtk-ai/rtk)
