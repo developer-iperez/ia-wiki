@@ -19,6 +19,7 @@ Todo el contenido del vault vive en `content/`. Es la única carpeta que debes c
   ---
   ```
 - Enlaces internos: usa wikilinks `[[Nombre de la nota]]` (la resolución de enlaces está fijada en `shortest`, como en Obsidian).
+- **Toda nota nueva debe quedar referenciada desde `content/index.md`** (directamente, o desde otra nota ya enlazada desde la portada) con un wikilink, para que no quede huérfana ni invisible en el sitio publicado. Esto forma parte de la tarea, no un paso opcional aparte.
 - Notas que no deben publicarse todavía: añade `draft: true` en el frontmatter, o colócalas en `content/private/` o `content/templates/` (excluidas del build por `ignorePatterns` en `quartz.config.yaml`).
 - No crees ni edites una carpeta `.obsidian/` dentro de `content/` — si el usuario abre el vault en Obsidian local, esa carpeta es suya y ya está excluida del build.
 
@@ -43,5 +44,6 @@ npx quartz build           # compilar (el mismo comando que ejecuta el CI)
 1. Buscar/investigar el tema pedido (búsqueda web si el entorno lo permite).
 2. Resumir con tus propias palabras — no copiar/pegar contenido extenso de fuentes externas.
 3. Guardar como nota nueva (o actualizar una existente) en `content/`, siguiendo las convenciones de arriba.
-4. `git add content/... && git commit`.
-5. El `git push` requiere confirmación del usuario (ver `.claude/settings.json`); en cuanto llega a `main`, el Action publica el sitio en 1–2 minutos.
+4. Enlazar la nota desde `content/index.md` (o desde una nota ya alcanzable desde la portada).
+5. `git add content/... && git commit`.
+6. El `git push` requiere confirmación del usuario (ver `.claude/settings.json`); en cuanto llega a `main`, el Action publica el sitio en 1–2 minutos.
