@@ -50,5 +50,10 @@ rtk init -g          # configura el hook para Claude Code / Copilot (por defecto
 - Compatible nativamente con Windows desde la v0.37.2 (no requiere shell Unix).
 - Licencia Apache 2.0.
 
+## Ver también
+
+- [[claude/claude-code|Claude Code]] — uno de los agentes con los que se integra vía hook.
+- [[claude/comandos|Comandos útiles de Claude Code]] — comandos como `/cost` para medir consumo; `rtk` lo reduce de forma proactiva.
+
 Sources:
 - [rtk-ai/rtk en GitHub](https://github.com/rtk-ai/rtk)

@@ -35,6 +35,10 @@ Se pueden crear comandos propios añadiendo ficheros en `~/.claude/commands/` (o
 
 Para capacidades más elaboradas que un simple comando (con sus propias instrucciones y activación automática por contexto), ver [[claude/skills|Skills de Claude]].
 
+## Ver también
+
+- [[tools/rtk|rtk (Rust Token Killer)]] — complementa a `/cost`: reduce de forma proactiva los tokens que consumen los comandos de terminal, en vez de solo medirlos.
+
 Sources:
 - [CLAUDE CODE CLI — COMANDOS VERIFICADOS (Jun 2026)](https://gist.github.com/IoTeacher/292ef3e9cf11414ef968e1ec44ed886b)
 - [Claude Code Slash Commands 2026: Complete List + Custom Commands](https://www.heyuan110.com/posts/ai/2026-03-05-claude-code-slash-commands/)
