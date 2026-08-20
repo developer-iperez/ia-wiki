@@ -12,6 +12,7 @@ Bienvenido a mi wiki de notas.
 - [[claude/claude-code-everything|Claude Code: Everything You Need to Know]]
 - [[claude/mcp|MCP (Model Context Protocol)]]
 - [[claude/subagentes|Subagentes de Claude Code]]
+- [[claude/hooks|Hooks de Claude Code]]
 
 ## Modelos LLM open source (ejecución local)
 

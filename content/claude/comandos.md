@@ -28,6 +28,7 @@ Resumen de los comandos más útiles del día a día con [[claude/claude-code|Cl
 - `/status` — estado de la cuenta.
 - `/agents` — gestiona [[claude/subagentes|subagentes]] especializados.
 - `/mcp` — gestiona los servidores [[claude/mcp|MCP]] conectados (herramientas externas: Google Drive, Jira, Slack, etc.).
+- `/hooks` — muestra los [[claude/hooks|hooks]] configurados, sus matchers y de dónde vienen.
 
 ## Comandos personalizados
 
@@ -40,6 +41,7 @@ Para capacidades más elaboradas que un simple comando (con sus propias instrucc
 - [[tools/rtk|rtk (Rust Token Killer)]] — complementa a `/cost`: reduce de forma proactiva los tokens que consumen los comandos de terminal, en vez de solo medirlos.
 - [[claude/mcp|MCP (Model Context Protocol)]] — detalle completo de qué es y cómo conectar servidores con `/mcp`.
 - [[claude/subagentes|Subagentes de Claude Code]] — detalle completo de qué son y cómo gestionarlos con `/agents`.
+- [[claude/hooks|Hooks de Claude Code]] — detalle completo de qué son y cómo verlos con `/hooks`.
 
 Sources:
 - [CLAUDE CODE CLI — COMANDOS VERIFICADOS (Jun 2026)](https://gist.github.com/IoTeacher/292ef3e9cf11414ef968e1ec44ed886b)

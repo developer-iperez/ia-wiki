@@ -53,6 +53,7 @@ rtk init -g          # configura el hook para Claude Code / Copilot (por defecto
 ## Ver también
 
 - [[claude/claude-code|Claude Code]] — uno de los agentes con los que se integra vía hook.
+- [[claude/hooks|Hooks de Claude Code]] — el mecanismo concreto que usa `rtk init -g` para reescribir los comandos de forma transparente.
 - [[claude/comandos|Comandos útiles de Claude Code]] — comandos como `/cost` para medir consumo; `rtk` lo reduce de forma proactiva.
 - [[tools/claude-mem|claude-mem]] — ahorro de tokens complementario, pero entre sesiones en vez de en la salida de comandos.
 - [[tools/headroom|headroom]] — enfoque más amplio: comprime también JSON, ficheros y RAG, no solo la salida de bash.
