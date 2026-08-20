@@ -54,6 +54,7 @@ No hace falta invocarlas a mano: Claude las detecta automáticamente comparando 
 ## Ver también
 
 - [[claude/comandos|Comandos útiles de Claude Code]]
+- [[claude/subagentes|Subagentes de Claude Code]] — mismo formato de fichero (Markdown + frontmatter), pero un subagente abre una sesión aislada aparte en vez de añadir contexto a la actual.
 
 Sources:
 - [Cómo Crear Claude Skills: Guía Completa (2026)](https://www.bleap.finance/es/blog/como-crear-claude-skills)
