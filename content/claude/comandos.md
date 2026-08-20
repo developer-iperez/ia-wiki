@@ -27,7 +27,7 @@ Resumen de los comandos más útiles del día a día con [[claude/claude-code|Cl
 - `/cost` — muestra el consumo de tokens/coste de la sesión; conviene revisarlo en sesiones largas, porque un bucle agéntico puede gastar más de lo esperado.
 - `/status` — estado de la cuenta.
 - `/agents` — gestiona subagentes especializados.
-- `/mcp` — gestiona los servidores MCP conectados (herramientas externas: Google Drive, Jira, Slack, etc.).
+- `/mcp` — gestiona los servidores [[claude/mcp|MCP]] conectados (herramientas externas: Google Drive, Jira, Slack, etc.).
 
 ## Comandos personalizados
 
@@ -38,6 +38,7 @@ Para capacidades más elaboradas que un simple comando (con sus propias instrucc
 ## Ver también
 
 - [[tools/rtk|rtk (Rust Token Killer)]] — complementa a `/cost`: reduce de forma proactiva los tokens que consumen los comandos de terminal, en vez de solo medirlos.
+- [[claude/mcp|MCP (Model Context Protocol)]] — detalle completo de qué es y cómo conectar servidores con `/mcp`.
 
 Sources:
 - [CLAUDE CODE CLI — COMANDOS VERIFICADOS (Jun 2026)](https://gist.github.com/IoTeacher/292ef3e9cf11414ef968e1ec44ed886b)
