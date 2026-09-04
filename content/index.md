@@ -17,6 +17,7 @@ Bienvenido a mi wiki de notas.
 
 ## Modelos LLM open source (ejecución local)
 
+- [[models/index|Comparativa de modelos open source]]
 - [[models/qwen3.5-4b|Qwen3.5-4B]]
 - [[models/lfm2.5-2.6b|LFM2.5-2.6B]]
 - [[models/spark-x2.5-4b|Spark-X2.5-4B]]
