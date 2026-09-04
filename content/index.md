@@ -13,6 +13,7 @@ Bienvenido a mi wiki de notas.
 - [[claude/mcp|MCP (Model Context Protocol)]]
 - [[claude/subagentes|Subagentes de Claude Code]]
 - [[claude/hooks|Hooks de Claude Code]]
+- [[claude/modelos-claude|Familia de modelos Claude]]
 
 ## Modelos LLM open source (ejecución local)
 
@@ -28,3 +29,4 @@ Bienvenido a mi wiki de notas.
 - [[tools/codeburn|codeburn]]
 - [[tools/caveman|caveman]]
 - [[tools/llm-router|llm-router]]
+- [[tools/codegraph|codegraph]]

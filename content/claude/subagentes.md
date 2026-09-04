@@ -128,6 +128,7 @@ Un subagente puede además precargar skills concretas (campo `skills` del frontm
 - [[claude/claude-code|Claude Code]]
 - [[claude/comandos|Comandos útiles de Claude Code]] — incluye `/agents`, el comando para gestionarlos dentro de una sesión.
 - [[claude/skills|Skills de Claude]]
+- [[claude/modelos-claude|Familia de modelos Claude]] — para elegir bien el campo `model` de cada subagente.
 
 Sources:
 - [Crear subagentes personalizados — Claude Code Docs](https://code.claude.com/docs/es/sub-agents)

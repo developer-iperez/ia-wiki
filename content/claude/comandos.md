@@ -20,7 +20,7 @@ Resumen de los comandos más útiles del día a día con [[claude/claude-code|Cl
 - `/clear` — limpia el historial de la conversación (útil cuando Claude empieza a mezclar contexto de tareas anteriores).
 - `/compact` — comprime los mensajes anteriores en un resumen para liberar contexto sin perder el hilo, cuando te acercas al límite.
 - `/context` — muestra cuánto contexto se está usando.
-- `/model` — cambia de modelo (p. ej. a uno más barato/rápido si el coste importa).
+- `/model` — cambia de [[claude/modelos-claude|modelo]] (p. ej. a uno más barato/rápido si el coste importa).
 - `/permissions` — consulta o cambia los permisos de la sesión (lo mismo que se puede fijar de antemano en `.claude/settings.json`).
 - `/memory` — edita el `CLAUDE.md` del proyecto directamente desde la sesión.
 - `/review` — pide una revisión de código sobre los cambios actuales.
@@ -42,6 +42,7 @@ Para capacidades más elaboradas que un simple comando (con sus propias instrucc
 - [[claude/mcp|MCP (Model Context Protocol)]] — detalle completo de qué es y cómo conectar servidores con `/mcp`.
 - [[claude/subagentes|Subagentes de Claude Code]] — detalle completo de qué son y cómo gestionarlos con `/agents`.
 - [[claude/hooks|Hooks de Claude Code]] — detalle completo de qué son y cómo verlos con `/hooks`.
+- [[claude/modelos-claude|Familia de modelos Claude]] — detalle completo de cada modelo y cuándo usarlo con `/model`.
 
 Sources:
 - [CLAUDE CODE CLI — COMANDOS VERIFICADOS (Jun 2026)](https://gist.github.com/IoTeacher/292ef3e9cf11414ef968e1ec44ed886b)

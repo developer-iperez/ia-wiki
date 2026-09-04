@@ -30,6 +30,7 @@ Claude Code pide confirmación antes de ejecutar acciones potencialmente sensibl
 - [[claude/mcp|MCP (Model Context Protocol)]]
 - [[claude/subagentes|Subagentes de Claude Code]]
 - [[claude/hooks|Hooks de Claude Code]]
+- [[claude/modelos-claude|Familia de modelos Claude]]
 - [[tools/rtk|rtk (Rust Token Killer)]] — para reducir el consumo de tokens de las sesiones
 - [[tools/claude-mem|claude-mem]] — para dar continuidad de contexto entre sesiones
 - [[tools/headroom|headroom]] — para comprimir tool outputs, ficheros y RAG antes de que lleguen al modelo
