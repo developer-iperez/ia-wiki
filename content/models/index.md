@@ -8,6 +8,7 @@ Resúmenes de modelos LLM open source pensados para ejecución local (plantilla:
 - [[models/lfm2.5-2.6b|LFM2.5-2.6B]]
 - [[models/spark-x2.5-4b|Spark-X2.5-4B]]
 - [[models/spark-x2.5-1.7b|Spark-X2.5-1.7B]]
+- [[models/granite-4.2-3b|Granite-4.2-3B]]
 
 ## Comparativa
 
@@ -19,3 +20,4 @@ Tabla mantenida a mano: cada modelo nuevo suma una fila. Detalle completo en su 
 | <a href="./lfm2.5-2.6b">LFM2.5-2.6B</a> | 2.69B denso | 128K | solo texto | híbrida convolución + GQA | LFM Open License 1.0 | agentes/herramientas on-device, eficiencia |
 | <a href="./spark-x2.5-4b">Spark-X2.5-4B</a> | 4B denso | 1M | solo texto | híbrida full + SWA (1:3) | Apache 2.0 | agentes, código, matemáticas |
 | <a href="./spark-x2.5-1.7b">Spark-X2.5-1.7B</a> | 1.7B denso | 1M | solo texto | híbrida full + SWA (1:3) | Apache 2.0 | instrucciones, eficiencia on-device |
+| <a href="./granite-4.2-3b">Granite-4.2-3B</a> | 3B denso | 128K (512K ext.) | solo texto | denso GQA (40 capas) | Apache 2.0 | razonamiento, código, agentes |

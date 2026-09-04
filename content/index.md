@@ -22,6 +22,7 @@ Bienvenido a mi wiki de notas.
 - [[models/lfm2.5-2.6b|LFM2.5-2.6B]]
 - [[models/spark-x2.5-4b|Spark-X2.5-4B]]
 - [[models/spark-x2.5-1.7b|Spark-X2.5-1.7B]]
+- [[models/granite-4.2-3b|Granite-4.2-3B]]
 
 ## Herramientas (ahorro de tokens / optimización de Claude e IA)
 
