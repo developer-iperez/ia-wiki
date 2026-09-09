@@ -38,6 +38,12 @@ Comparativa (según la model card oficial) frente a otros modelos sub-10B:
 
 Lectura rápida: con menos de un tercio de los parámetros de Qwen3.5-9B, LFM2.5-2.6B iguala o supera a modelos bastante más grandes en instrucciones y uso de herramientas/agentes, aunque se queda algo por debajo en código y matemáticas puras. Los propios autores no lo recomiendan para programación agéntica ni tareas intensivas en conocimiento.
 
+### Artificial Analysis (medición independiente, consultado 2026-09-09)
+
+- [Página del modelo en AA](https://artificialanalysis.ai/models/lfm2-5-2-6b): Intelligence Index **8 (estimado, v4.3)**, puesto #8/47 en clase tiny (≤4B, mediana 6); velocidad ~200 tok/s (#2/47), precio $0.00/1M (vía API de Liquid).
+- En el [estudio de AA en móvil](https://artificialanalysis.ai/articles/mobile-phone-intelligence-inference) (iPhone 17 Pro, límite 16K) comparte la mejor nota media (63) con Nanbeige4.2-3B: destaca en IFBench (59%, el mejor en móvil), MATH-500 (>90%) y no-alucinación (79% frente a ~33% de Nanbeige y ~24%/1% de los Qwen3.5 9B).
+- Lectura: AA lo sitúa por debajo de MiniCPM5-2B (13) y Granite 4.2 3B (9) en índice compuesto, pero lo valida como el más eficiente para instrucciones on-device (8 s y 2.3 GB en el test de móvil).
+
 ## Configuración recomendada
 
 **Parámetros de muestreo** (únicos, no varían por modo):
@@ -75,3 +81,4 @@ Sources:
 - [LiquidAI/LFM2.5-2.6B en Hugging Face](https://huggingface.co/LiquidAI/LFM2.5-2.6B)
 - [LFM2.5-2.6B blog post](https://www.liquid.ai/blog/lfm2-5-2-6b)
 - [LFM2 Technical Report (arXiv:2511.23404)](https://arxiv.org/abs/2511.23404)
+- [LFM2.5-2.6B en Artificial Analysis](https://artificialanalysis.ai/models/lfm2-5-2-6b)

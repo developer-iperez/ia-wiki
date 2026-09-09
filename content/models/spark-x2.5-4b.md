@@ -41,6 +41,11 @@ Comparativa (según la model card oficial; los valores con * vienen de las model
 
 Lectura rápida: domina claramente en tareas agénticas, código multilingüe y matemáticas frente a Qwen3.5-4B, al que duplica o triplica en varios benchmarks de agentes; en contexto largo (AA-LCR) y conocimiento general (GPQA) queda a la par del 4B y por debajo del 9B. Es solo-texto: si hace falta visión, [[models/qwen3.5-4b|Qwen3.5-4B]] sigue siendo la opción.
 
+### Artificial Analysis (medición independiente, consultado 2026-09-09)
+
+- **Sin entrada en Artificial Analysis**: a fecha de consulta no hay página de modelo ni puntuación en el Intelligence Index para Spark-X2.5-4B (búsqueda sin resultados en artificialanalysis.ai).
+- La tabla de arriba son por tanto solo valores del vendor (XHToken); pendientes de validación independiente.
+
 ## Configuración recomendada
 
 **Parámetros de muestreo** (únicos, según la model card):

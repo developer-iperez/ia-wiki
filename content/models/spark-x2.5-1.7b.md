@@ -41,6 +41,11 @@ Comparativa (según la model card oficial; los valores con * vienen de las model
 
 Lectura rápida: brilla en instrucciones (IFBench por encima de Qwen3.5-4B) y supera a Qwen3.5-2B en casi todo, pero queda claramente por debajo de su hermano de 4B en código agéntico (SWE-Bench Pro 10.4 frente a 44.4), contexto largo (AA-LCR 24.3 frente a 56.3) y conocimiento general (GPQA 43.8 frente a 67.4). Es la opción cuando el hardware manda y el 4B no cabe.
 
+### Artificial Analysis (medición independiente, consultado 2026-09-09)
+
+- **Sin entrada en Artificial Analysis**: a fecha de consulta no hay página de modelo ni puntuación en el Intelligence Index para Spark-X2.5-1.7B (búsqueda sin resultados en artificialanalysis.ai).
+- La tabla de arriba son por tanto solo valores del vendor (XHToken); pendientes de validación independiente.
+
 ## Configuración recomendada
 
 **Parámetros de muestreo** (únicos, según la model card):
