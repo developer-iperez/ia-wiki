@@ -6,16 +6,17 @@ Bienvenido a mi wiki de notas.
 
 ## Claude
 
-- [[claude/index|Claude Code y ecosistema]]:
-  - [[claude/claude-code|Claude Code]]
-  - [[claude/comandos|Comandos útiles de Claude Code]]
-  - [[claude/skills|Skills de Claude]]
-  - [[claude/claude-code-guide-zebbern|Claude Code Guide (zebbern)]]
-  - [[claude/claude-code-everything|Claude Code: Everything You Need to Know]]
-  - [[claude/mcp|MCP (Model Context Protocol)]]
-  - [[claude/subagentes|Subagentes de Claude Code]]
-  - [[claude/hooks|Hooks de Claude Code]]
-  - [[claude/modelos-claude|Familia de modelos Claude]]
+### [[claude/index|Claude Code y ecosistema]]
+
+- [[claude/claude-code|Claude Code]]
+- [[claude/comandos|Comandos útiles de Claude Code]]
+- [[claude/skills|Skills de Claude]]
+- [[claude/claude-code-guide-zebbern|Claude Code Guide (zebbern)]]
+- [[claude/claude-code-everything|Claude Code: Everything You Need to Know]]
+- [[claude/mcp|MCP (Model Context Protocol)]]
+- [[claude/subagentes|Subagentes de Claude Code]]
+- [[claude/hooks|Hooks de Claude Code]]
+- [[claude/modelos-claude|Familia de modelos Claude]]
 
 ## Modelos LLM open source (ejecución local)
 
