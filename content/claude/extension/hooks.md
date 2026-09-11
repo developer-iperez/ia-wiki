@@ -2,7 +2,7 @@
 title: Hooks de Claude Code
 ---
 
-Un hook es un comando de shell (o un endpoint HTTP, una tool MCP, o incluso un prompt evaluado por Claude) que [[claude/claude-code|Claude Code]] ejecuta automáticamente en puntos concretos de su ciclo de vida: antes de correr una herramienta, después de editar un fichero, al terminar la respuesta, etc. A diferencia de pedirle a Claude "siempre haz X después de Y", un hook es una automatización **determinista** — se ejecuta siempre, sin depender de que el modelo decida acordarse.
+Un hook es un comando de shell (o un endpoint HTTP, una tool MCP, o incluso un prompt evaluado por Claude) que [[claude/fundamentos/claude-code|Claude Code]] ejecuta automáticamente en puntos concretos de su ciclo de vida: antes de correr una herramienta, después de editar un fichero, al terminar la respuesta, etc. A diferencia de pedirle a Claude "siempre haz X después de Y", un hook es una automatización **determinista** — se ejecuta siempre, sin depender de que el modelo decida acordarse.
 
 ## Por qué usarlos
 
@@ -33,7 +33,7 @@ Se agrupan según cuándo se disparan:
 **Otros**
 - `FileChanged`, `CwdChanged`, `ConfigChange` — cambios de estado del entorno.
 - `Notification` — cuando Claude Code envía una notificación.
-- `PreCompact` / `PostCompact` — antes/después de comprimir el contexto (ver `/compact` en [[claude/comandos|comandos]]).
+- `PreCompact` / `PostCompact` — antes/después de comprimir el contexto (ver `/compact` en [[claude/fundamentos/comandos|comandos]]).
 
 ## Configuración
 
@@ -162,8 +162,8 @@ exit 0
 
 ## Ver también
 
-- [[claude/claude-code|Claude Code]]
-- [[claude/comandos|Comandos útiles de Claude Code]]
+- [[claude/fundamentos/claude-code|Claude Code]]
+- [[claude/fundamentos/comandos|Comandos útiles de Claude Code]]
 - [[tools/rtk|rtk (Rust Token Killer)]] — ejemplo real de herramienta construida sobre hooks: reescribe comandos de shell de forma transparente.
 
 Sources:

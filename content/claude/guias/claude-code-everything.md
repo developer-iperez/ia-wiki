@@ -2,7 +2,7 @@
 title: "Claude Code: Everything You Need to Know"
 ---
 
-Guía práctica de [[claude/claude-code|Claude Code]] centrada en **modelos mentales claros**, desde el setup hasta la orquestación multi-agente. Repo: [wesammustafa/Claude-Code-Everything-You-Need-to-Know](https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know).
+Guía práctica de [[claude/fundamentos/claude-code|Claude Code]] centrada en **modelos mentales claros**, desde el setup hasta la orquestación multi-agente. Repo: [wesammustafa/Claude-Code-Everything-You-Need-to-Know](https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know).
 
 ## Qué cubre
 
@@ -31,9 +31,9 @@ Guía práctica de [[claude/claude-code|Claude Code]] centrada en **modelos ment
 
 ## Ver también
 
-- [[claude/claude-code-guide-zebbern|Claude Code Guide (zebbern)]] — guía complementaria, más orientada a referencia rápida de comandos.
-- [[claude/skills|Skills de Claude]]
-- [[claude/comandos|Comandos útiles de Claude Code]]
+- [[claude/guias/claude-code-guide-zebbern|Claude Code Guide (zebbern)]] — guía complementaria, más orientada a referencia rápida de comandos.
+- [[claude/extension/skills|Skills de Claude]]
+- [[claude/fundamentos/comandos|Comandos útiles de Claude Code]]
 
 Sources:
 - [wesammustafa/Claude-Code-Everything-You-Need-to-Know en GitHub](https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know)

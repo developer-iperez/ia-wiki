@@ -49,7 +49,7 @@ Requiere Node.js ≥ 22.13. Para Cursor y OpenCode necesita `better-sqlite3` (se
 
 ## Ver también
 
-- [[claude/claude-code|Claude Code]] — una de las 36 herramientas que puede analizar.
+- [[claude/fundamentos/claude-code|Claude Code]] — una de las 36 herramientas que puede analizar.
 - [[tools/rtk|rtk (Rust Token Killer)]] — mientras rtk reduce tokens de forma proactiva, codeburn mide el consumo y detecta dónde se desperdician.
 - [[tools/agentmemory|agentmemory]] y [[tools/claude-mem|claude-mem]] — reducen tokens entre sesiones; codeburn sirve para medir el efecto de ese tipo de optimizaciones.
 

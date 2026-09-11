@@ -19,7 +19,7 @@ Precios de la API directa de Anthropic (primera parte); en Amazon Bedrock, Googl
 
 - **Claude Fable 5** — el modelo más capaz que Anthropic ha publicado de forma general, primero de un nivel nuevo por encima de Opus ("Mythos-class"). Especialmente por delante en tareas largas y complejas (ingeniería de software, investigación). Incorpora salvaguardas de seguridad más agresivas que el resto: algunas consultas sensibles se redirigen automáticamente a Opus 4.8 (ocurre en menos del 5% de las sesiones). Existe también **Claude Mythos 5** (`claude-mythos-5`), el mismo modelo base con las salvaguardas relajadas, disponible solo para un grupo reducido de organizaciones de ciberdefensa e infraestructura crítica.
 - **Claude Opus 5** — el buque insignia "normal": máxima capacidad de razonamiento a un precio bastante menor que Fable 5. Es el que Anthropic recomienda por defecto salvo que se pida explícitamente otro.
-- **Claude Sonnet 5** — el equilibrio entre capacidad y coste/velocidad; el modelo que usa por defecto [[claude/claude-code|Claude Code]] para la mayoría de tareas de programación del día a día.
+- **Claude Sonnet 5** — el equilibrio entre capacidad y coste/velocidad; el modelo que usa por defecto [[claude/fundamentos/claude-code|Claude Code]] para la mayoría de tareas de programación del día a día.
 - **Claude Haiku 4.5** — el más rápido y barato, con ventana de contexto menor (200K frente a 1M del resto). Ideal para tareas sencillas, de alto volumen, o como "clasificador" barato antes de escalar a un modelo mayor.
 
 ## Cuándo usar cada uno
@@ -32,7 +32,7 @@ Un patrón habitual: usar Haiku para explorar/clasificar y escalar a Sonnet u Op
 
 ## Elegir el modelo en la práctica
 
-**En Claude Code**, con el slash command `/model` (ver [[claude/comandos|comandos]]), o fijando el modelo por defecto de un [[claude/subagentes|subagente]] en su frontmatter (`model: haiku`).
+**En Claude Code**, con el slash command `/model` (ver [[claude/fundamentos/comandos|comandos]]), o fijando el modelo por defecto de un [[claude/extension/subagentes|subagente]] en su frontmatter (`model: haiku`).
 
 **Vía API** (ejemplo en TypeScript):
 
@@ -50,9 +50,9 @@ Los modelos de la generación 2026 (Opus 5, Sonnet 5, Fable 5) admiten un parám
 
 ## Ver también
 
-- [[claude/claude-code|Claude Code]]
-- [[claude/comandos|Comandos útiles de Claude Code]] — el comando `/model`.
-- [[claude/subagentes|Subagentes de Claude Code]] — cada subagente puede fijar su propio modelo.
+- [[claude/fundamentos/claude-code|Claude Code]]
+- [[claude/fundamentos/comandos|Comandos útiles de Claude Code]] — el comando `/model`.
+- [[claude/extension/subagentes|Subagentes de Claude Code]] — cada subagente puede fijar su propio modelo.
 - [[tools/llm-router|llm-router]] — automatiza justo la elección "qué modelo para cada tarea" descrita arriba.
 - [[tools/codeburn|codeburn]] — para medir el coste real por modelo una vez en uso.
 

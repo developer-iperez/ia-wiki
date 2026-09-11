@@ -2,7 +2,7 @@
 title: "Claude Code Guide (zebbern)"
 ---
 
-Guía de referencia de una sola página para [[claude/claude-code|Claude Code]]: instalación, configuración, comandos y funciones avanzadas. Repo: [zebbern/claude-code-guide](https://github.com/zebbern/claude-code-guide).
+Guía de referencia de una sola página para [[claude/fundamentos/claude-code|Claude Code]]: instalación, configuración, comandos y funciones avanzadas. Repo: [zebbern/claude-code-guide](https://github.com/zebbern/claude-code-guide).
 
 ## Qué cubre
 
@@ -24,8 +24,8 @@ Guía de referencia de una sola página para [[claude/claude-code|Claude Code]]:
 
 ## Ver también
 
-- [[claude/claude-code-everything|Claude Code: Everything You Need to Know]] — guía complementaria, más orientada a modelos mentales que a referencia de comandos.
-- [[claude/comandos|Comandos útiles de Claude Code]]
+- [[claude/guias/claude-code-everything|Claude Code: Everything You Need to Know]] — guía complementaria, más orientada a modelos mentales que a referencia de comandos.
+- [[claude/fundamentos/comandos|Comandos útiles de Claude Code]]
 
 Sources:
 - [zebbern/claude-code-guide en GitHub](https://github.com/zebbern/claude-code-guide)

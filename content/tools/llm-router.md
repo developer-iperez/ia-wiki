@@ -2,7 +2,7 @@
 title: llm-router
 ---
 
-Enrutador de modelos de IA que intercepta los prompts de herramientas de codificación ([[claude/claude-code|Claude Code]], Codex, Gemini CLI, Cursor, VS Code) y los dirige automáticamente al modelo más barato capaz de resolver cada tarea, con fallback entre proveedores si uno falla. Repo: [ypollak2/llm-router](https://github.com/ypollak2/llm-router).
+Enrutador de modelos de IA que intercepta los prompts de herramientas de codificación ([[claude/fundamentos/claude-code|Claude Code]], Codex, Gemini CLI, Cursor, VS Code) y los dirige automáticamente al modelo más barato capaz de resolver cada tarea, con fallback entre proveedores si uno falla. Repo: [ypollak2/llm-router](https://github.com/ypollak2/llm-router).
 
 ## Propósito
 
@@ -60,7 +60,7 @@ Configuración persistente en `~/.llm-router/config.yaml`.
 - [[tools/rtk|rtk]] y [[tools/headroom|headroom]] — comprimen el contenido que se envía al modelo; `llm-router` en cambio decide *qué modelo* lo recibe. Combinables entre sí.
 - [[tools/codeburn|codeburn]] — para medir si el enrutamiento está reduciendo de verdad el coste por sesión/proyecto.
 - [[tools/caveman|caveman]] — mencionado en su propia documentación como parte de una pila de compresión (RTK+Caveman) usada por proyectos derivados como OmniRoute.
-- [[claude/modelos-claude|Familia de modelos Claude]] — contexto de qué modelo Claude usar en cada caso, la misma decisión que `llm-router` automatiza también hacia proveedores no-Anthropic.
+- [[claude/fundamentos/modelos-claude|Familia de modelos Claude]] — contexto de qué modelo Claude usar en cada caso, la misma decisión que `llm-router` automatiza también hacia proveedores no-Anthropic.
 
 Sources:
 - [ypollak2/llm-router en GitHub](https://github.com/ypollak2/llm-router)

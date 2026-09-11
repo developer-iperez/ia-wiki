@@ -2,7 +2,7 @@
 title: Skills de Claude
 ---
 
-Una **Skill** es un módulo de capacidad instalable que amplía lo que [[claude/claude-code|Claude Code]] (o Claude en general) sabe hacer por defecto. En vez de repetir las mismas instrucciones en cada conversación, se empaquetan una única vez en una carpeta y Claude las aplica automáticamente cuando detecta que vienen al caso.
+Una **Skill** es un módulo de capacidad instalable que amplía lo que [[claude/fundamentos/claude-code|Claude Code]] (o Claude en general) sabe hacer por defecto. En vez de repetir las mismas instrucciones en cada conversación, se empaquetan una única vez en una carpeta y Claude las aplica automáticamente cuando detecta que vienen al caso.
 
 La analogía útil: si un prompt suelto es una nota adhesiva que se escribe y se tira, una skill es un procedimiento documentado — con versión y responsable — que estandariza cómo se hace siempre una tarea concreta.
 
@@ -53,8 +53,8 @@ No hace falta invocarlas a mano: Claude las detecta automáticamente comparando 
 
 ## Ver también
 
-- [[claude/comandos|Comandos útiles de Claude Code]]
-- [[claude/subagentes|Subagentes de Claude Code]] — mismo formato de fichero (Markdown + frontmatter), pero un subagente abre una sesión aislada aparte en vez de añadir contexto a la actual.
+- [[claude/fundamentos/comandos|Comandos útiles de Claude Code]]
+- [[claude/extension/subagentes|Subagentes de Claude Code]] — mismo formato de fichero (Markdown + frontmatter), pero un subagente abre una sesión aislada aparte en vez de añadir contexto a la actual.
 
 Sources:
 - [Cómo Crear Claude Skills: Guía Completa (2026)](https://www.bleap.finance/es/blog/como-crear-claude-skills)

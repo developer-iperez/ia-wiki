@@ -2,7 +2,7 @@
 title: Subagentes de Claude Code
 ---
 
-Un subagente es una instancia aislada de [[claude/claude-code|Claude Code]] que la sesión principal lanza para encargarse de una tarea concreta: tiene su propia ventana de contexto, sus propios permisos de herramientas y, opcionalmente, su propio modelo. El agente principal solo ve el resumen final que devuelve el subagente, nunca sus pasos intermedios — así la conversación principal no se llena de logs de búsquedas, contenido de ficheros leídos, etc.
+Un subagente es una instancia aislada de [[claude/fundamentos/claude-code|Claude Code]] que la sesión principal lanza para encargarse de una tarea concreta: tiene su propia ventana de contexto, sus propios permisos de herramientas y, opcionalmente, su propio modelo. El agente principal solo ve el resumen final que devuelve el subagente, nunca sus pasos intermedios — así la conversación principal no se llena de logs de búsquedas, contenido de ficheros leídos, etc.
 
 ## Por qué usarlos
 
@@ -14,7 +14,7 @@ Un subagente es una instancia aislada de [[claude/claude-code|Claude Code]] que 
 
 ## Formato de fichero
 
-Un subagente es un Markdown con frontmatter YAML, muy similar a una [[claude/skills|skill]]:
+Un subagente es un Markdown con frontmatter YAML, muy similar a una [[claude/extension/skills|skill]]:
 
 ```markdown
 ---
@@ -112,7 +112,7 @@ tools: Agent(worker, researcher), Read, Bash
 
 Ambos son ficheros Markdown con frontmatter que Claude activa según una `description`, pero resuelven cosas distintas:
 
-- Una [[claude/skills|skill]] añade **conocimiento/procedimiento** al contexto de la sesión actual — sigue siendo la misma conversación.
+- Una [[claude/extension/skills|skill]] añade **conocimiento/procedimiento** al contexto de la sesión actual — sigue siendo la misma conversación.
 - Un **subagente** abre una **sesión aislada aparte**, con su propio contexto y (opcionalmente) su propio modelo, y solo devuelve el resultado final.
 
 Un subagente puede además precargar skills concretas (campo `skills` del frontmatter).
@@ -125,10 +125,10 @@ Un subagente puede además precargar skills concretas (campo `skills` del frontm
 
 ## Ver también
 
-- [[claude/claude-code|Claude Code]]
-- [[claude/comandos|Comandos útiles de Claude Code]] — incluye `/agents`, el comando para gestionarlos dentro de una sesión.
-- [[claude/skills|Skills de Claude]]
-- [[claude/modelos-claude|Familia de modelos Claude]] — para elegir bien el campo `model` de cada subagente.
+- [[claude/fundamentos/claude-code|Claude Code]]
+- [[claude/fundamentos/comandos|Comandos útiles de Claude Code]] — incluye `/agents`, el comando para gestionarlos dentro de una sesión.
+- [[claude/extension/skills|Skills de Claude]]
+- [[claude/fundamentos/modelos-claude|Familia de modelos Claude]] — para elegir bien el campo `model` de cada subagente.
 
 Sources:
 - [Crear subagentes personalizados — Claude Code Docs](https://code.claude.com/docs/es/sub-agents)

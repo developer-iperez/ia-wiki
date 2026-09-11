@@ -20,7 +20,7 @@ A diferencia de `rtk` o `headroom`, que comprimen lo que el modelo **lee** (sali
 
 ## Ver también
 
-- [[claude/claude-code|Claude Code]] — uno de los agentes con los que se integra.
+- [[claude/fundamentos/claude-code|Claude Code]] — uno de los agentes con los que se integra.
 - [[tools/rtk|rtk (Rust Token Killer)]] y [[tools/headroom|headroom]] — comprimen tokens de entrada; `caveman` comprime tokens de salida.
 
 Sources:

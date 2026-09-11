@@ -2,7 +2,7 @@
 title: codegraph
 ---
 
-Grafo de conocimiento del código pre-indexado, que se auto-sincroniza con cada cambio y da a los agentes de IA ([[claude/claude-code|Claude Code]], Codex, Gemini CLI, Cursor, OpenCode, Copilot...) el código exacto que necesitan en una sola llamada: menos tokens, menos tool calls, 100% local. Repo: [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph).
+Grafo de conocimiento del código pre-indexado, que se auto-sincroniza con cada cambio y da a los agentes de IA ([[claude/fundamentos/claude-code|Claude Code]], Codex, Gemini CLI, Cursor, OpenCode, Copilot...) el código exacto que necesitan en una sola llamada: menos tokens, menos tool calls, 100% local. Repo: [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph).
 
 ## Propósito
 
@@ -49,7 +49,7 @@ Matiz importante que el propio proyecto documenta: esos números miden tokens *p
 - [[tools/rtk|rtk]] y [[tools/headroom|headroom]] — comprimen lo que se envía al modelo; `codegraph` evita que el agente tenga que descubrir la estructura a ciegas. Combinables.
 - [[tools/codeburn|codeburn]] — para medir si el grafo está reduciendo de verdad el coste por sesión/proyecto.
 - [[tools/claude-mem|claude-mem]] y [[tools/agentmemory|agentmemory]] — memoria entre sesiones; `codegraph` es conocimiento *del código*, no de la conversación.
-- [[claude/mcp|MCP (Model Context Protocol)]] — el mecanismo por el que `codegraph install` conecta el grafo con cada agente.
+- [[claude/extension/mcp|MCP (Model Context Protocol)]] — el mecanismo por el que `codegraph install` conecta el grafo con cada agente.
 
 Sources:
 - [colbymchenry/codegraph en GitHub](https://github.com/colbymchenry/codegraph)

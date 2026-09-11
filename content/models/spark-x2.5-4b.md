@@ -7,7 +7,7 @@ Modelo de la familia [Spark-X2.5](https://huggingface.co/XHToken/Spark-X2.5-4B) 
 ## Highlights
 
 - **Atención híbrida eficiente**: combina 1 capa de atención completa con 3 de sliding-window (SWA) — el equilibrio entre rendimiento, velocidad de inferencia y tamaño de KV-cache, con 1M de contexto nativo sin trucos de extrapolación.
-- **Entrenado para agentes**: pre-entreno de ~20T de tokens (con etapa dedicada de contexto largo hasta 1M) + SFT y RL a gran escala; los autores lo integran directamente con Codex, [[claude/claude-code|Claude Code]], OpenClaw y Hermes.
+- **Entrenado para agentes**: pre-entreno de ~20T de tokens (con etapa dedicada de contexto largo hasta 1M) + SFT y RL a gran escala; los autores lo integran directamente con Codex, [[claude/fundamentos/claude-code|Claude Code]], OpenClaw y Hermes.
 - **Líder de su tamaño en código agéntico y mates**: supera a [[models/qwen3.5-4b|Qwen3.5-4B]] (y a veces al de 9B) en SWE-Bench Pro/Multilingual, τ³-bench, MCP-Atlas y AIME 2026.
 - **Más de 200 idiomas** y compatibilidad amplia de hardware (NVIDIA, Huawei Ascend, Hygon, HOUMO.AI).
 - **Piensa por defecto**: modo thinking activable/desactivable vía `chat_template_kwargs` (igual que la familia Qwen3).

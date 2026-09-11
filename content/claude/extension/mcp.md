@@ -6,7 +6,7 @@ MCP es el estándar abierto creado por Anthropic (noviembre de 2024) que permite
 
 ## Por qué importa
 
-Sin MCP, conectar un agente como [[claude/claude-code|Claude Code]] a Jira, una base de datos o Figma implicaba copiar y pegar datos manualmente en la conversación. Con un servidor MCP conectado, el agente puede leer y actuar directamente sobre ese sistema:
+Sin MCP, conectar un agente como [[claude/fundamentos/claude-code|Claude Code]] a Jira, una base de datos o Figma implicaba copiar y pegar datos manualmente en la conversación. Con un servidor MCP conectado, el agente puede leer y actuar directamente sobre ese sistema:
 
 - "Implementa la funcionalidad del ticket JIRA ENG-4521 y crea una PR en GitHub."
 - "Consulta Sentry para ver el impacto del último despliegue."
@@ -116,8 +116,8 @@ claude mcp add --transport stdio db -- npx -y @bytebase/dbhub \
 
 ## Ver también
 
-- [[claude/claude-code|Claude Code]] — el agente donde se configuran y usan estos servidores.
-- [[claude/comandos|Comandos útiles de Claude Code]] — incluye `/mcp`, el comando para gestionar servidores dentro de una sesión.
+- [[claude/fundamentos/claude-code|Claude Code]] — el agente donde se configuran y usan estos servidores.
+- [[claude/fundamentos/comandos|Comandos útiles de Claude Code]] — incluye `/mcp`, el comando para gestionar servidores dentro de una sesión.
 
 Sources:
 - [MCP (Model Context Protocol): Que Es, Como Funciona y Por Que Es el USB-C de la IA [Guia 2026] | Javadex](https://www.javadex.es/blog/mcp-model-context-protocol-guia-completa-2026)

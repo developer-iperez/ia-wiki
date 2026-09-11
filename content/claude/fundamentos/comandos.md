@@ -2,7 +2,7 @@
 title: Comandos útiles de Claude Code
 ---
 
-Resumen de los comandos más útiles del día a día con [[claude/claude-code|Claude Code]], separados entre los que se lanzan desde la terminal (antes de entrar en una sesión) y los slash commands que se usan dentro de una sesión ya iniciada.
+Resumen de los comandos más útiles del día a día con [[claude/fundamentos/claude-code|Claude Code]], separados entre los que se lanzan desde la terminal (antes de entrar en una sesión) y los slash commands que se usan dentro de una sesión ya iniciada.
 
 ## Terminal
 
@@ -20,29 +20,29 @@ Resumen de los comandos más útiles del día a día con [[claude/claude-code|Cl
 - `/clear` — limpia el historial de la conversación (útil cuando Claude empieza a mezclar contexto de tareas anteriores).
 - `/compact` — comprime los mensajes anteriores en un resumen para liberar contexto sin perder el hilo, cuando te acercas al límite.
 - `/context` — muestra cuánto contexto se está usando.
-- `/model` — cambia de [[claude/modelos-claude|modelo]] (p. ej. a uno más barato/rápido si el coste importa).
+- `/model` — cambia de [[claude/fundamentos/modelos-claude|modelo]] (p. ej. a uno más barato/rápido si el coste importa).
 - `/permissions` — consulta o cambia los permisos de la sesión (lo mismo que se puede fijar de antemano en `.claude/settings.json`).
 - `/memory` — edita el `CLAUDE.md` del proyecto directamente desde la sesión.
 - `/review` — pide una revisión de código sobre los cambios actuales.
 - `/cost` — muestra el consumo de tokens/coste de la sesión; conviene revisarlo en sesiones largas, porque un bucle agéntico puede gastar más de lo esperado.
 - `/status` — estado de la cuenta.
-- `/agents` — gestiona [[claude/subagentes|subagentes]] especializados.
-- `/mcp` — gestiona los servidores [[claude/mcp|MCP]] conectados (herramientas externas: Google Drive, Jira, Slack, etc.).
-- `/hooks` — muestra los [[claude/hooks|hooks]] configurados, sus matchers y de dónde vienen.
+- `/agents` — gestiona [[claude/extension/subagentes|subagentes]] especializados.
+- `/mcp` — gestiona los servidores [[claude/extension/mcp|MCP]] conectados (herramientas externas: Google Drive, Jira, Slack, etc.).
+- `/hooks` — muestra los [[claude/extension/hooks|hooks]] configurados, sus matchers y de dónde vienen.
 
 ## Comandos personalizados
 
 Se pueden crear comandos propios añadiendo ficheros en `~/.claude/commands/` (o `.claude/commands/` a nivel de proyecto): cada fichero se convierte en un slash command nuevo, lo que permite convertir flujos de trabajo repetitivos en una sola invocación.
 
-Para capacidades más elaboradas que un simple comando (con sus propias instrucciones y activación automática por contexto), ver [[claude/skills|Skills de Claude]].
+Para capacidades más elaboradas que un simple comando (con sus propias instrucciones y activación automática por contexto), ver [[claude/extension/skills|Skills de Claude]].
 
 ## Ver también
 
 - [[tools/rtk|rtk (Rust Token Killer)]] — complementa a `/cost`: reduce de forma proactiva los tokens que consumen los comandos de terminal, en vez de solo medirlos.
-- [[claude/mcp|MCP (Model Context Protocol)]] — detalle completo de qué es y cómo conectar servidores con `/mcp`.
-- [[claude/subagentes|Subagentes de Claude Code]] — detalle completo de qué son y cómo gestionarlos con `/agents`.
-- [[claude/hooks|Hooks de Claude Code]] — detalle completo de qué son y cómo verlos con `/hooks`.
-- [[claude/modelos-claude|Familia de modelos Claude]] — detalle completo de cada modelo y cuándo usarlo con `/model`.
+- [[claude/extension/mcp|MCP (Model Context Protocol)]] — detalle completo de qué es y cómo conectar servidores con `/mcp`.
+- [[claude/extension/subagentes|Subagentes de Claude Code]] — detalle completo de qué son y cómo gestionarlos con `/agents`.
+- [[claude/extension/hooks|Hooks de Claude Code]] — detalle completo de qué son y cómo verlos con `/hooks`.
+- [[claude/fundamentos/modelos-claude|Familia de modelos Claude]] — detalle completo de cada modelo y cuándo usarlo con `/model`.
 
 Sources:
 - [CLAUDE CODE CLI — COMANDOS VERIFICADOS (Jun 2026)](https://gist.github.com/IoTeacher/292ef3e9cf11414ef968e1ec44ed886b)

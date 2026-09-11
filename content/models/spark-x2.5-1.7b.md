@@ -7,7 +7,7 @@ Hermano pequeño de [[models/spark-x2.5-4b|Spark-X2.5-4B]], de la familia [Spark
 ## Highlights
 
 - **Misma arquitectura eficiente que el 4B**: 1 capa de atención completa + 3 de sliding-window (SWA), con 1M de contexto nativo sin trucos de extrapolación.
-- **Entrenado para agentes**: pre-entreno de ~20T de tokens (con etapa dedicada de contexto largo hasta 1M) + SFT y RL a gran escala con consolidación MOPD; integración con Codex, [[claude/claude-code|Claude Code]], OpenClaw y Hermes.
+- **Entrenado para agentes**: pre-entreno de ~20T de tokens (con etapa dedicada de contexto largo hasta 1M) + SFT y RL a gran escala con consolidación MOPD; integración con Codex, [[claude/fundamentos/claude-code|Claude Code]], OpenClaw y Hermes.
 - **Muy fuerte en instrucciones para su tamaño**: supera a Qwen3.5-4B en IFBench (66.3) y lo roza en IFEval (89.5), con τ²-bench de 65.3.
 - **Más de 200 idiomas** y compatibilidad amplia de hardware (NVIDIA, Huawei Ascend, Hygon, HOUMO.AI).
 - **Piensa por defecto**: modo thinking activable/desactivable vía `chat_template_kwargs` (igual que la familia Qwen3).

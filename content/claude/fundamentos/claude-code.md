@@ -16,7 +16,7 @@ Claude Code es la herramienta de codificación agéntica de Anthropic que corre 
 - Editar múltiples ficheros de forma coherente en una sola tarea.
 - Ejecutar comandos de terminal (build, tests, linters) e iterar según el resultado.
 - Gestionar flujos de Git: preparar cambios, escribir mensajes de commit, crear ramas y abrir pull requests.
-- Conectarse a herramientas externas vía [[claude/mcp|MCP (Model Context Protocol)]]: leer documentos de Google Drive, actualizar tickets de Jira, consultar Slack, o cualquier servidor MCP que se configure.
+- Conectarse a herramientas externas vía [[claude/extension/mcp|MCP (Model Context Protocol)]]: leer documentos de Google Drive, actualizar tickets de Jira, consultar Slack, o cualquier servidor MCP que se configure.
 - Trabajar con hasta ~1 millón de tokens de contexto, lo que le permite razonar sobre bases de código grandes.
 
 ## Modelo de permisos
@@ -25,12 +25,12 @@ Claude Code pide confirmación antes de ejecutar acciones potencialmente sensibl
 
 ## Ver también
 
-- [[claude/comandos|Comandos útiles de Claude Code]]
-- [[claude/skills|Skills de Claude]]
-- [[claude/mcp|MCP (Model Context Protocol)]]
-- [[claude/subagentes|Subagentes de Claude Code]]
-- [[claude/hooks|Hooks de Claude Code]]
-- [[claude/modelos-claude|Familia de modelos Claude]]
+- [[claude/fundamentos/comandos|Comandos útiles de Claude Code]]
+- [[claude/extension/skills|Skills de Claude]]
+- [[claude/extension/mcp|MCP (Model Context Protocol)]]
+- [[claude/extension/subagentes|Subagentes de Claude Code]]
+- [[claude/extension/hooks|Hooks de Claude Code]]
+- [[claude/fundamentos/modelos-claude|Familia de modelos Claude]]
 - [[tools/rtk|rtk (Rust Token Killer)]] — para reducir el consumo de tokens de las sesiones
 - [[tools/claude-mem|claude-mem]] — para dar continuidad de contexto entre sesiones
 - [[tools/headroom|headroom]] — para comprimir tool outputs, ficheros y RAG antes de que lleguen al modelo

@@ -121,7 +121,7 @@ Se recomienda commitear `graphify-out/` (salvo `cost.json` y opcionalmente `cach
 - [[tools/claude-mem|claude-mem]] y [[tools/agentmemory|agentmemory]] — memoria entre sesiones; graphify es conocimiento *del proyecto*, no de la conversación.
 - [[tools/headroom|headroom]] y [[tools/rtk|rtk (Rust Token Killer)]] — comprimen lo que se envía al modelo; graphify evita que haya que leerlo a ciegas. Combinables.
 - [[tools/codeburn|codeburn]] — para medir si el grafo reduce de verdad el coste por sesión/proyecto.
-- [[claude/mcp|MCP (Model Context Protocol)]] — mecanismo por el que se expone el grafo a los agentes.
+- [[claude/extension/mcp|MCP (Model Context Protocol)]] — mecanismo por el que se expone el grafo a los agentes.
 
 Sources:
 - [Graphify-Labs/graphify en GitHub](https://github.com/Graphify-Labs/graphify)
