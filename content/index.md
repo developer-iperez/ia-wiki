@@ -35,6 +35,8 @@ Bienvenido a mi wiki de notas.
 - [[models/spark-x2.5-1.7b|Spark-X2.5-1.7B]]
 - [[models/granite-4.2-3b|Granite-4.2-3B]]
 - [[models/minicpm5-2b|MiniCPM5-2B]]
+- [[models/gemma-4-e4b|Gemma-4-E4B]]
+- [[models/gemma-4-e2b|Gemma-4-E2B]]
 
 ## Herramientas (ahorro de tokens / optimización de Claude e IA)
 
