@@ -22,6 +22,7 @@ Todo el contenido del vault vive en `content/`. Es la única carpeta que debes c
 - **Toda nota nueva debe quedar referenciada desde `content/index.md`** (directamente, o desde otra nota ya enlazada desde la portada) con un wikilink, para que no quede huérfana ni invisible en el sitio publicado. Esto forma parte de la tarea, no un paso opcional aparte.
 - Notas que no deben publicarse todavía: añade `draft: true` en el frontmatter, o colócalas en `content/private/` o `content/templates/` (excluidas del build por `ignorePatterns` en `quartz.config.yaml`).
 - **Resúmenes de modelos LLM open source** van en `content/models/`, uno por modelo, y deben seguir la plantilla `content/templates/modelo-llm.md` (secciones: Highlights, Parámetros/contexto/tipo de inferencia, Resumen esquemático de benchmarks, Configuración recomendada).
+- **Tabla comparativa de modelos** (`content/models/index.md`): las filas van siempre ordenadas por Índice AA de mayor a menor; en caso de empate, por orden alfabético de modelo (insensible a mayúsculas); los modelos sin entrada en Artificial Analysis van al final (también en orden alfabético). Cada vez que se añada o actualice un modelo en la tabla, hay que reordenar las filas para mantener ese orden. Columnas: Modelo | Parámetros | Contexto nativo | Arquitectura | Índice AA | Fuerte en | Modalidad | Licencia.
 - No crees ni edites una carpeta `.obsidian/` dentro de `content/` — si el usuario abre el vault en Obsidian local, esa carpeta es suya y ya está excluida del build.
 
 ## Qué NO tocar
