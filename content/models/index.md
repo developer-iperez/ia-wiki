@@ -12,6 +12,7 @@ Resúmenes de modelos LLM open source pensados para ejecución local (plantilla:
 - [[models/minicpm5-2b|MiniCPM5-2B]]
 - [[models/gemma-4-e4b|Gemma-4-E4B]]
 - [[models/gemma-4-e2b|Gemma-4-E2B]]
+- [[models/ling-3.0-tiny|Ling-3.0-tiny]]
 
 ## Comparativa
 
@@ -19,6 +20,7 @@ Tabla mantenida a mano: cada modelo nuevo suma una fila. Detalle completo en su 
 
 | Modelo | Parámetros | Contexto nativo | Arquitectura | Índice AA* | Fuerte en | Modalidad | Licencia |
 |---|---|---|---|---|---|---|---|
+| <a href="./ling-3.0-tiny">Ling-3.0-tiny</a> | 7.9B MoE (1.3B activos) | 128K (256K vía YaRN) | híbrida-lineal KDA+MLA 3:1, 128 expertos (8+1) | 15 (est.) | agentes on-device, velocidad, contexto largo | solo texto | MIT |
 | <a href="./minicpm5-2b">MiniCPM5-2B</a> | ~2.5B denso | 128K | Llama GQA (42 capas) | 13 | código, mates, agentes/tool-use | solo texto | Apache 2.0 |
 | <a href="./qwen3.5-4b">Qwen3.5-4B</a> | ~4.66B denso | 262K (1M vía YaRN) | híbrida Gated DeltaNet + atención completa | 13 (est.) | instrucciones, contexto largo, visión | texto+imagen+vídeo | Apache 2.0 |
 | <a href="./gemma-4-e4b">Gemma-4-E4B</a> | 4.5B efectivos (8B total) | 128K | densa híbrida local+global, PLE | 9 (est.) | multimodal compacto, código, agentes | texto+imagen+vídeo+audio | Apache 2.0 |

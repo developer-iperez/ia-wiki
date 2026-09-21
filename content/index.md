@@ -37,6 +37,7 @@ Bienvenido a mi wiki de notas.
 - [[models/minicpm5-2b|MiniCPM5-2B]]
 - [[models/gemma-4-e4b|Gemma-4-E4B]]
 - [[models/gemma-4-e2b|Gemma-4-E2B]]
+- [[models/ling-3.0-tiny|Ling-3.0-tiny]]
 
 ## Herramientas (ahorro de tokens / optimización de Claude e IA)
 
