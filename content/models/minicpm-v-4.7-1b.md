@@ -39,9 +39,9 @@ Comparativa según la tabla oficial de la model card, modo Instruct, con compres
 
 Lectura rápida: gana a los comparables de su tamaño en casi todo lo general, OCR y alucinación; en MMMU queda por detrás de Gemma-4-E2B, que tiene 5.1B. En la tabla oficial también aparece MiniCPM-V-4.6 (1.3B) con MathVista 75.50 y OmniDocBench 86.93, por encima del 4.7 en esos dos benchmarks.
 
-### Artificial Analysis
+### Artificial Analysis (medición independiente, consultado 2026-11-01)
 
-- **Sin entrada**: consulté `artificialanalysis.ai/models/minicpm-v-4-7-1b` y `minicpm-v-4-7`, ambos 404. No hay página de AA para MiniCPM-V-4.7-1B; ia-lab también lo marca como "sin página en AA" (`MODELS.md`).
+- **Sin entrada**: ni en la web actual ni en las copias de Wayback (15 oct, 1 nov y 1 oct 2026) hay página para MiniCPM-V-4.7-1B (los slugs dan 404). ia-lab también lo marca como "sin página en AA" (`MODELS.md`).
 
 ## Configuración recomendada
 

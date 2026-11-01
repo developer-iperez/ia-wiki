@@ -41,9 +41,8 @@ Lectura rápida: según el vendor, destaca en conocimiento, ciencia, instruccion
 
 ### Artificial Analysis (medición independiente, consultado 2026-11-01)
 
-- [Página de Qwen3.5 9B (Reasoning) en AA](https://artificialanalysis.ai/models/qwen3-5-9b): variante **reasoning**; existe también una variante non-reasoning en AA. La ficha consultada muestra el Intelligence Index v5.0 como **N/A** (sin valor publicado en esta vista), así que no se puede citar un número vigente de AA para esta versión.
+- **Intelligence Index v4.3.2: 11** (copia de AA del 2026-10-15 en Wayback Machine, variante *reasoning*; existe también *non-reasoning*). La [página actual](https://artificialanalysis.ai/models/qwen3-5-9b) muestra el índice v5.0 como N/A.
 - Datos de la misma ficha: 9.7B parámetros totales, 262k de ventana, texto+imagen+vídeo de entrada, Apache 2.0, ~61 tokens/s de salida y $0.14 / $0.20 por millón de tokens entrada/salida (mediana de proveedores).
-- Referencia local previa: el índice en el menú de ia-lab es **11** para la variante reasoning (medido en versión anterior de AA; no coincide con la vista v5.0 actual).
 
 ## Configuración recomendada
 

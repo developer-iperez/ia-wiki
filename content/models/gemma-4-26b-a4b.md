@@ -41,9 +41,8 @@ Lectura rápida: frente al 31B denso pierde poco en conocimiento, ciencia y mate
 
 ### Artificial Analysis (medición independiente, consultado 2026-11-01)
 
-- [Página del modelo en AA (reasoning)](https://artificialanalysis.ai/models/gemma-4-26b-a4b): Intelligence Index **no publicado (N/A)** en la versión reasoning; también la variante [non-reasoning](https://artificialanalysis.ai/models/gemma-4-26b-a4b-non-reasoning) figura sin índice. Ni la reasoning ni la non-reasoning tienen cifra verificable, así que no hay puntuación independiente que citar.
-- Datos que sí publica AA: 25,2B totales / 3,8B activos, contexto 256K, licencia Apache 2.0, velocidad de salida ~100 tok/s (reasoning) y ~119 tok/s (non-reasoning) según la mediana de proveedores, precio de API ~$0,10 / $0,34 por millón de tokens de entrada/salida (reasoning).
-- La cifra "AA 17\*" del menú local (ia-lab, estimada) **no se ha podido verificar** en AA: la página no publica índice para este modelo.
+- **Intelligence Index v4.3.2: 17 (estimado por AA)** para la variante *reasoning* y **13 (estimado)** para *non-reasoning* (copia de AA del 2026-10-15 en Wayback Machine). En la web actual ambas muestran el índice v5.0 como N/A.
+- Datos que AA publica hoy: 25,2B totales / 3,8B activos, contexto 256K, licencia Apache 2.0, velocidad de salida ~100 tok/s (reasoning) y ~119 tok/s (non-reasoning), precio ~$0,10 / $0,34 por millón de tokens de entrada/salida (reasoning).
 
 ## Configuración recomendada
 

@@ -41,7 +41,7 @@ Lectura rápida: mejora frente a su base Qwen3.5-4B en casi todas las filas del 
 
 ### Artificial Analysis (medición independiente, consultado 2026-11-01)
 
-No hay página de NeoHorse-1-4B en Artificial Analysis: el slug `artificialanalysis.ai/models/neohorse-1-4b` devuelve 404 y no aparece en el listado consultado. Por tanto no hay Intelligence Index ni métricas independientes de velocidad o precio; la entrada del menú de AA queda como "—".
+No hay página de NeoHorse-1-4B en Artificial Analysis: el slug `neohorse-1-4b` devuelve 404 en la web actual y en las copias de Wayback (15 oct, 1 nov y 1 oct 2026). Por tanto no hay Intelligence Index ni métricas independientes; la entrada del menú de AA queda como "—".
 
 ## Configuración recomendada
 

@@ -41,9 +41,8 @@ Lectura rápida: destaca en código agentico y terminal frente a su predecesor (
 
 ### Artificial Analysis (medición independiente, consultado 2026-11-01)
 
-- [Página del modelo en AA](https://artificialanalysis.ai/models/qwen3-6-35b-a3b) (variante *reasoning*): en la versión consultada hoy, el Intelligence Index v5.0 aparece como **N/A** (sin puntuación visible), así que **no he podido verificar el valor numérico**. El menú local de ia-lab lo lista como **AA 18**, probablemente de una versión anterior del índice; no lo he confirmado.
+- **Intelligence Index v4.3.2: 18** (copia de AA del 2026-10-15 en Wayback Machine, variante *reasoning*). La [página actual](https://artificialanalysis.ai/models/qwen3-6-35b-a3b) muestra el índice v5.0 como N/A.
 - Datos de AA visibles hoy: 36B totales / 3B activos, contexto 262k, texto+imagen+vídeo de entrada, licencia Apache 2.0, ~133 tokens/s en la API de Alibaba (precio $0.38 entrada / $2.25 salida por millón).
-- Posición: AA lo clasifica como *Open weights* dentro de la clase *Small* (4B–40B); no he podido verificar el puesto exacto en el ranking de hoy.
 
 ## Configuración recomendada
 

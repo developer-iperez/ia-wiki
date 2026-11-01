@@ -44,7 +44,7 @@ Lectura rápida: el mejor compacto del wiki en agentes (τ³-bench duplica al Sp
 
 - [Página del modelo en AA](https://artificialanalysis.ai/models/granite-4-2-3b): Intelligence Index **9 (v4.3)**, puesto #3/47 en clase tiny (mediana 6); en v4.1.1 había marcado 14.
 - Rendimiento/precio AA: **214.9 tok/s (#1/47)** con latencia 0.46 s, coste ~$0.01 por tarea del índice ($0.03/$0.12 por 1M in/out); a cambio es verboso (92M tokens frente a 74M de mediana).
-- Lectura: AA lo coloca por encima de LFM2.5-2.6B (8) pero por debajo de MiniCPM5-2B (13) en índice, y confirma su punto fuerte como el tiny más rápido para servir por API.
+- Lectura: AA lo coloca por encima de LFM2.5-2.6B (8) pero por debajo de MiniCPM5-2B (12) en índice, y confirma su punto fuerte como el tiny más rápido para servir por API.
 
 ## Configuración recomendada
 

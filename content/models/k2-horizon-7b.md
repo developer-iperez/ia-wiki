@@ -40,9 +40,9 @@ Lectura rápida: destaca en mates, código de agente (SWE-bench) y contexto larg
 
 ### Artificial Analysis (medición independiente, consultado 2026-11-01)
 
-- [Página del modelo en AA](https://artificialanalysis.ai/models/k2-horizon-7b): en la consulta del 2026-11-01 el Intelligence Index v5.0 aparece como **N/A** (sin puntuación publicada), con contexto de 524k, Apache 2.0 y 7B de parámetros.
-- Dato local: la medición de ia-lab con el índice v4.3.2 dio **AA 21** (ver `MODELS.md`), +5 sobre K2-Horizon-3.7B. Esa cifra no la he podido confirmar en la página de AA, que ahora usa v5.0.
-- Lectura: AA no valida hoy el compuesto en v5.0; los benchmarks del vendor (SWE-bench 70.6, Terminal-Bench 2.1 39.1) son la referencia disponible, y conviene repetirlos antes de darlos por buenos en producción.
+- **Intelligence Index v4.3.2: 21** (copia de AA del 2026-10-15 en Wayback Machine). La [página actual](https://artificialanalysis.ai/models/k2-horizon-7b) muestra el índice v5.0 como N/A.
+- Contexto de 524k, Apache 2.0 y 7B de parámetros según la misma página.
+- Lectura: en v5.0 no hay compuesto que validar; los benchmarks del vendor (SWE-bench 70.6, Terminal-Bench 2.1 39.1) son la referencia disponible, y conviene repetirlos antes de darlos por buenos en producción.
 
 ## Configuración recomendada
 

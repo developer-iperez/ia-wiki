@@ -41,8 +41,8 @@ Lectura rápida: destaca en mates y en SWE-bench Verified frente a comparables d
 
 ### Artificial Analysis (medición independiente, consultado 2026-11-01)
 
-- [Página del modelo en AA](https://artificialanalysis.ai/models/k2-horizon-3-7b) (slug `k2-horizon-3-7b`; `k2-horizon-4b` devuelve 404): la página lista 3,7B, texto→texto, 524K de contexto, Apache 2.0, reasoning y open weights, pero el Intelligence Index aparece como **N/A** en la consulta de hoy.
-- Discrepancia: nuestro menú y `model-params.sh` tienen anotado **AA 16**; no lo he podido confirmar en la página pública. Tomar el 16 como dato local no verificado.
+- **Intelligence Index v4.3.2: 16** (copia de AA del 2026-10-15 en Wayback Machine). AA lo lista como *K2 Horizon 3.7B* (slug `k2-horizon-3-7b`; `k2-horizon-4b` devuelve 404). En la web actual el índice v5.0 aparece como N/A.
+- Según la misma página: 3,7B, texto→texto, 524K de contexto, Apache 2.0, reasoning y open weights.
 
 ## Configuración recomendada
 

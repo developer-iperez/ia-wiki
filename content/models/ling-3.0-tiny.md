@@ -41,9 +41,9 @@ Lectura rápida: con solo 1.3B activos empata con [[models/minicpm5-2b|MiniCPM5-
 
 ### Artificial Analysis (medición independiente, consultado 2026-09-21)
 
-- [Página del modelo en AA](https://artificialanalysis.ai/models/ling-3-0-tiny): Intelligence Index **15 (estimado, v4.3.2)**, puesto #17/142; velocidad 57 tok/s (mediana entre proveedores), precio $0.00/$0.00 por 1M tokens in/out (InclusionAI y Novita), latencia al primer token ~3.3 s, contexto 262K.
-- La model card oficial declara **25 puntos en el índice v4.1.1** y **16 en el Agentic Index** (por encima incluso del Gemma-4-31B en agentes), con >160 tok/s y ~18 s end-to-end para 500 tokens incluyendo thinking. La diferencia con el 15 actual es cambio de versión del índice (v4.1.1 → v4.3.2), no del modelo — mismo patrón que [[models/gemma-4-e4b|Gemma-4-E4B]]/[[models/gemma-4-e2b|Gemma-4-E2B]].
-- Lectura: AA lo coloca como **líder del wiki en índice compuesto** (15, por encima de Qwen3.5-4B y MiniCPM5-2B con 13), rapidísimo por API (132–172 tok/s en InclusionAI) pero muy verboso en el índice (210–220M tokens, el peor del comparador en verbosidad).
+- [Página del modelo en AA](https://artificialanalysis.ai/models/ling-3-0-tiny): Intelligence Index **11 (v4.3.2, según la copia de AA del 2026-10-15 en Wayback Machine)**, puesto #36/141; en la web actual AA muestra v5.0 sin valor (N/A). Velocidad 57 tok/s (mediana entre proveedores), precio $0.00/$0.00 por 1M tokens in/out (InclusionAI y Novita), latencia al primer token ~3.3 s, contexto 262K.
+- La model card oficial declara **25 puntos en el índice v4.1.1** y **16 en el Agentic Index** (por encima incluso del Gemma-4-31B en agentes), con >160 tok/s y ~18 s end-to-end para 500 tokens incluyendo thinking. La diferencia con el 11 de v4.3.2 es cambio de versión del índice (v4.1.1 → v4.3.2), no del modelo — mismo patrón que [[models/gemma-4-e4b|Gemma-4-E4B]]/[[models/gemma-4-e2b|Gemma-4-E2B]].
+- Lectura: en v4.3.2 queda por debajo de [[models/qwen3.5-4b|Qwen3.5-4B]] (13) y [[models/minicpm5-2b|MiniCPM5-2B]] (12) en índice compuesto. Es rapidísimo por API (132–172 tok/s en InclusionAI) pero muy verboso en el índice (230M tokens, según la misma copia).
 
 ## Configuración recomendada
 

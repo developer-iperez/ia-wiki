@@ -50,7 +50,7 @@ Lectura rápida: supera a Gemma 3 27B en casi todo salvo MMLU-Pro/MMMLU puros, c
 - [Página del modelo en AA (reasoning)](https://artificialanalysis.ai/models/gemma-4-e4b): Intelligence Index **9 (estimado, v4.3.2)**, puesto #51/142; velocidad ~42 tok/s (mediana DeepInfra, único proveedor API), precio $0.02/$0.10 por 1M tokens in/out, latencia al primer token ~0.85 s.
 - [Variante non-reasoning](https://artificialanalysis.ai/models/gemma-4-e4b-non-reasoning): Intelligence Index **7 (estimado, v4.3.2)**, puesto #20/75 de su clase, ~43 tok/s.
 - En el [artículo de lanzamiento de AA](https://artificialanalysis.ai/articles/gemma-4-everything-you-need-to-know) (abril 2026, metodología anterior) el E4B reasoning marcó **19 puntos** (+13 sobre Gemma 3n E4B), con AA-Omniscience −20 — mejor (menos alucinación) que el 31B (−45) y a la par de modelos mucho mayores. La diferencia con el 9 actual es cambio de versión del índice, no del modelo.
-- Lectura: AA confirma el perfil del vendor (razonador compacto y barato, poco verboso en tokens), pero con índice compuesto por debajo de [[models/minicpm5-2b|MiniCPM5-2B]] (13) e igualado con [[models/granite-4.2-3b|Granite-4.2-3B]] (9); su ventaja diferencial es la multimodalidad (imagen+audio) que esos modelos no tienen.
+- Lectura: AA confirma el perfil del vendor (razonador compacto y barato, poco verboso en tokens), pero con índice compuesto por debajo de [[models/minicpm5-2b|MiniCPM5-2B]] (12) e igualado con [[models/granite-4.2-3b|Granite-4.2-3B]] (9); su ventaja diferencial es la multimodalidad (imagen+audio) que esos modelos no tienen.
 
 ## Configuración recomendada
 

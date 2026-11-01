@@ -41,7 +41,7 @@ Lectura rápida: para su tamaño (4B), rinde notablemente bien en instrucciones 
 
 ### Artificial Analysis (medición independiente, consultado 2026-09-09)
 
-- [Página del modelo en AA](https://artificialanalysis.ai/models/qwen3-5-4b): Intelligence Index **13 (estimado, v4.3)**, puesto #28/140 de su clase; velocidad 27 tok/s, precio ~$0.03/$0.15 por 1M tokens in/out.
+- [Página del modelo en AA](https://artificialanalysis.ai/models/qwen3-5-4b): Intelligence Index **13 (estimado, v4.3.2; copia de AA del 2026-10-15 en Wayback Machine)**, puesto #28/140 de su clase; velocidad 27 tok/s, precio ~$0.03/$0.15 por 1M tokens in/out.
 - En el [artículo de AA sobre los Qwen3.5 pequeños](https://artificialanalysis.ai/articles/qwen3-5-small-models) (metodología v4.1, marzo 2026) obtuvo **27 puntos**, descrito como el más inteligente por debajo de 5B; el 9B llegó a 32.
 - Desglose AA (v4.1, variante reasoning): GPQA Diamond 77.1, HLE 7.8, IFBench 52.0, AA-LCR 55.7, SciCode ~16–18, τ³-Banking 8.2, τ²-Telecom 92.1, Terminal-Bench v2.1 25.8, MMMU-Pro (visión) 65.4.
 - Lectura: AA confirma el perfil de la model card (fuerte en conocimiento GPQA, tool-use τ² y contexto largo), pero con IFBench (52.0) y τ³-Banking (8.2) más bajos que los valores del vendor — normal al ser harnesses distintos.

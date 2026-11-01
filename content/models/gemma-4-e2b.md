@@ -50,7 +50,7 @@ Lectura rápida: queda por debajo de [[models/gemma-4-e4b|Gemma-4-E4B]] en todas
 - [Página del modelo en AA (reasoning)](https://artificialanalysis.ai/models/gemma-4-e2b): Intelligence Index **8 (estimado, v4.3.2)**, puesto #67/142; sin velocidad ni precio publicados (modelo para self-host / on-device, sin proveedores API rastreados).
 - En el [artículo de lanzamiento de AA](https://artificialanalysis.ai/articles/gemma-4-everything-you-need-to-know) (abril 2026, metodología anterior) el E2B reasoning marcó **15 puntos** (+10 sobre Gemma 3n E2B), con AA-Omniscience −24 — mejor (menos alucinación) que el 31B (−45). La diferencia con el 8 actual es cambio de versión del índice, no del modelo.
 - En el [estudio de AA en móvil](https://artificialanalysis.ai/articles/mobile-phone-intelligence-inference) no aparece aún este modelo (el test es anterior a su lanzamiento); como referencia, [[models/lfm2.5-2.6b|LFM2.5-2.6B]] compartía la mejor nota media (63) en iPhone 17 Pro.
-- Lectura: AA lo sitúa en la mediana de su clase (8, mediana 8) — por debajo de [[models/minicpm5-2b|MiniCPM5-2B]] (13) y [[models/granite-4.2-3b|Granite-4.2-3B]] (9); su caso de uso es correr offline donde esos no caben, no ganar el índice.
+- Lectura: AA lo sitúa en la mediana de su clase (8, mediana 8) — por debajo de [[models/minicpm5-2b|MiniCPM5-2B]] (12) y [[models/granite-4.2-3b|Granite-4.2-3B]] (9); su caso de uso es correr offline donde esos no caben, no ganar el índice.
 
 ## Configuración recomendada
 

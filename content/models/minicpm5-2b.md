@@ -43,9 +43,9 @@ Lectura rápida: domina con claridad su rango de 2B en código, mates, contexto 
 
 ### Artificial Analysis (medición independiente, consultado 2026-09-09)
 
-- [Página del modelo en AA](https://artificialanalysis.ai/models/minicpm5-2b): Intelligence Index **13 (v4.3)**, puesto **#1/47 en clase tiny** (mediana 6); en v4.2 marcó 15, también top open <4B. Conciso: 74M tokens en el índice (#2/47 en verbosidad).
+- [Página del modelo en AA](https://artificialanalysis.ai/models/minicpm5-2b): Intelligence Index **12 (v4.3.2, según la copia de AA del 2026-10-15 en Wayback Machine)**; en la web actual AA muestra v5.0 sin valor (N/A). Según el índice v4.3, marcó 13 y, en v4.2, 15.
 - Los valores con † en la tabla de arriba vienen ya del release oficial de AA según el vendor: SciCode 26.3, HLE 8.9, GPQA-Diamond 70.2, AA-LCR 59.0, τ³-Banking 20.8, Terminal-Bench v2.1 8.6, GDPval-AA v2 19.6. El resto (AIME, MATH-500, LiveCodeBench, SWE-bench, BFCL…) son reproducciones internas de OpenBMB, aún sin réplica externa fila a fila.
-- Lectura: AA valida el compuesto (líder tiny), pero no cada fila del vendor; el SWE-bench Verified 46.4 en 2.5B sigue siendo el dato que más conviene reproducir antes de darlo por bueno en producción.
+- Lectura: AA valida el compuesto (12 en v4.3.2), pero no cada fila del vendor; el SWE-bench Verified 46.4 en 2.5B sigue siendo el dato que más conviene reproducir antes de darlo por bueno en producción.
 
 ## Configuración recomendada
 

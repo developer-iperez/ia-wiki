@@ -41,9 +41,8 @@ Lectura rápida: destaca en mates, código y agentes (τ²-Bench 79.5 frente a �
 
 ### Artificial Analysis (medición independiente, consultado 2026-11-01)
 
-- [Página del modelo en AA](https://artificialanalysis.ai/models/minicpm5-1b): Intelligence Index **N/A** en la versión actual del índice (v5.0). Tanto la variante reasoning como la non-reasoning aparecen sin valor publicado y sin API pública.
-- **Discrepancia**: el menú local de ia-lab (`MODELS.md`) recoge **9\*** para MiniCPM5-1B, pero la página de AA que consulté hoy no muestra ese valor. Es probable que el 9 venga de una versión anterior del índice; no he podido verificarlo.
-- Lectura: AA no valida de momento el compuesto para este modelo. Los números de la tabla de arriba son del vendor.
+- **Intelligence Index v4.3.2: 9 (estimado por AA)** (copia de AA del 2026-10-15 en Wayback Machine, variante *reasoning*). La [página actual](https://artificialanalysis.ai/models/minicpm5-1b) muestra el índice v5.0 como N/A, tanto para reasoning como para non-reasoning.
+- Lectura: los números de la tabla de arriba son del vendor; AA no valida de momento el compuesto con el índice vigente.
 
 ## Configuración recomendada
 

@@ -43,7 +43,7 @@ Lectura rápida: según el vendor destaca en instrucciones, tool use y código p
 
 ### Artificial Analysis (medición independiente, consultado 2026-11-01)
 
-Artificial Analysis **no tiene entrada** para LFM3-1.7B: el slug `lfm3-1-7b` devuelve 404 y el índice de modelos no lista este modelo. Por tanto no hay Intelligence Index que citar a fecha de hoy.
+Artificial Analysis **no tiene entrada** para LFM3-1.7B: el slug `lfm3-1-7b` devuelve 404 en la web actual y en las copias de Wayback (15 oct, 1 nov y 1 oct 2026). No hay Intelligence Index que citar en ninguna versión.
 
 ## Configuración recomendada
 
