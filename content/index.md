@@ -29,15 +29,27 @@ Bienvenido a mi wiki de notas.
 ## Modelos LLM open source (ejecución local)
 
 - [[models/index|Comparativa de modelos open source]]
+- [[models/k2-horizon-7b|K2-Horizon-7B]]
+- [[models/qwen3.6-35b-a3b|Qwen3.6-35B-A3B]]
+- [[models/gemma-4-26b-a4b|Gemma-4-26B-A4B]]
+- [[models/k2-horizon-4b|K2-Horizon-3.7B (4B)]]
+- [[models/ling-3.0-tiny|Ling-3.0-tiny]]
 - [[models/qwen3.5-4b|Qwen3.5-4B]]
+- [[models/qwen3.5-9b|Qwen3.5-9B]]
+- [[models/minicpm5-2b|MiniCPM5-2B]]
+- [[models/minicpm5-1b|MiniCPM5-1B]]
+- [[models/g9v3|G9v3-3B]]
+- [[models/neohorse-1-4b|NeoHorse-1-4B]]
 - [[models/lfm2.5-2.6b|LFM2.5-2.6B]]
+- [[models/lfm3-1.7b|LFM3-1.7B]]
 - [[models/spark-x2.5-4b|Spark-X2.5-4B]]
 - [[models/spark-x2.5-1.7b|Spark-X2.5-1.7B]]
 - [[models/granite-4.2-3b|Granite-4.2-3B]]
-- [[models/minicpm5-2b|MiniCPM5-2B]]
 - [[models/gemma-4-e4b|Gemma-4-E4B]]
 - [[models/gemma-4-e2b|Gemma-4-E2B]]
-- [[models/ling-3.0-tiny|Ling-3.0-tiny]]
+- [[models/minicpm-v-4.7-1b|MiniCPM-V-4.7-1B]]
+- [[models/ternary-bonsai-2-4b|Ternary-Bonsai-2-4B]]
+- [[models/ternary-bonsai-2-9b|Ternary-Bonsai-2-9B]]
 
 ## Herramientas (ahorro de tokens / optimización de Claude e IA)
 
