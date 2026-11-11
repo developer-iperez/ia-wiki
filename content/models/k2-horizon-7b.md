@@ -4,6 +4,9 @@ title: K2-Horizon-7B
 
 Modelo medio de la familia [K2-Horizon](https://huggingface.co/collections/IFM/k2-horizon-gguf) (IFM, Institute of Foundation Models), publicado en Hugging Face como [IFM/K2-Horizon-7B-GGUF](https://huggingface.co/IFM/K2-Horizon-7B-GGUF) (versión GGUF del [IFM/K2-Horizon-7B](https://huggingface.co/IFM/K2-Horizon-7B) original). Es un denso decoder-only de ~7B core con 512K de contexto, pensado para agentes, código y razonamiento en una GPU de consumo con cuantización Q4_K_M.
 
+
+> **Estado en ia-lab (2026-11-11):** purgado el 2026-11-01. Quedó cubierto por Ternary-Bonsai-2-27B (64K, ~36 t/s y más calidad); la receta se conserva en model-params.sh.
+
 ## Highlights
 
 - **Denso de referencia con 512K de contexto**: 524.288 tokens nativos desde las fases de midtraining; no hace falta extensión para la ventana completa.
@@ -38,7 +41,13 @@ Comparativa según la ficha oficial de Hugging Face (valores del vendor, escala 
 
 Lectura rápida: destaca en mates, código de agente (SWE-bench) y contexto largo frente a los 8–12B de su clase; en conocimiento experto (HLE) la ventaja sobre Qwen3.5-9B es modesta. La ficha no publica en su tabla principal BFCL ni IFEval de la versión GGUF; en la tabla de cuantizaciones (BF16 vs Q4_K_M) el Q4_K_M da IFEval 82.9, MMLU-Pro 71.6, GPQA-Diamond 67.1 y AIME 26 89.1.
 
-### Artificial Analysis (medición independiente, consultado 2026-11-01)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **AA Progress Index v1: 263** ([K2 Horizon 7B en AA](https://artificialanalysis.ai/models/k2-horizon-7b)). Es el índice que AA usa ahora en la comparativa de modelos open source pequeños; no es comparable con el Intelligence Index v4.3.2.
+- **AA Intelligence Index v5.0.1: N/A** en la ficha del modelo.
+- **Histórico:** Intelligence Index v4.3.2 = 21, consultado vía Wayback el 2026-10-15.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 - **Intelligence Index v4.3.2: 21** (copia de AA del 2026-10-15 en Wayback Machine). La [página actual](https://artificialanalysis.ai/models/k2-horizon-7b) muestra el índice v5.0 como N/A.
 - Contexto de 524k, Apache 2.0 y 7B de parámetros según la misma página.

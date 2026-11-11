@@ -4,6 +4,9 @@ title: MiniCPM5-1B
 
 Primer modelo de la familia [MiniCPM5](https://huggingface.co/collections/openbmb/minicpm5) (OpenBMB), publicado en Hugging Face como [openbmb/MiniCPM5-1B](https://huggingface.co/openbmb/MiniCPM5-1B). Es un denso de ~1B pensado para asistente local, agentes de código y tool-use en dispositivos o GPU modesta. Lo sucede el [MiniCPM5-2B](minicpm5-2b), con la misma receta escalada.
 
+
+> **Estado en ia-lab (2026-11-11):** instalado y mantenido para velocidad máxima y agentes simples.
+
 ## Highlights
 
 - **Denso pequeño, arquitectura estándar**: `LlamaForCausalLM` con 24 capas y GQA (16 Q / 2 KV); carga directa en Transformers, vLLM, SGLang y llama.cpp sin kernels custom ni fork del modelo.
@@ -39,7 +42,13 @@ Comparativa según la model card oficial, en modo Think (valores del vendor, no 
 
 Lectura rápida: destaca en mates, código y agentes (τ²-Bench 79.5 frente a ≤48 de los comparables); en BFCLv4 queda empatado con Qwen3-0.6B y Qwen3.5-0.8B, y en IFEval lo supera LFM2.5-1.2B. Los modelos comparables son de 0.6–1.2B, así que no es una comparación contra modelos de su mismo tamaño exacto ni contra MiniCPM5-2B.
 
-### Artificial Analysis (medición independiente, consultado 2026-11-01)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **AA Progress Index v1: 167 (reasoning) / 163 (non-reasoning)** ([MiniCPM5-1B en AA](https://artificialanalysis.ai/models/minicpm5-1b)). Es el índice que AA usa ahora en la comparativa de modelos open source pequeños; no es comparable con el Intelligence Index v4.3.2.
+- **AA Intelligence Index v5.0.1: N/A** en la ficha del modelo.
+- **Histórico:** Intelligence Index v4.3.2 = 9 (estimado) / 9 (estimado), consultado vía Wayback el 2026-10-15.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 - **Intelligence Index v4.3.2: 9 (estimado por AA)** (copia de AA del 2026-10-15 en Wayback Machine, variante *reasoning*). La [página actual](https://artificialanalysis.ai/models/minicpm5-1b) muestra el índice v5.0 como N/A, tanto para reasoning como para non-reasoning.
 - Lectura: los números de la tabla de arriba son del vendor; AA no valida de momento el compuesto con el índice vigente.

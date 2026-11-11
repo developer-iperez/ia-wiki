@@ -4,6 +4,9 @@ title: Ling-3.0-tiny
 
 Modelo de la familia [Ling 3.0](https://huggingface.co/collections/inclusionAI/ling-30) (Ant Group / InclusionAI, agosto 2026), publicado en Hugging Face como [inclusionAI/Ling-3.0-tiny](https://huggingface.co/inclusionAI/Ling-3.0-tiny). Es el miembro ligero de la familia: un MoE de 7.9B totales con solo **1.3B de parámetros activos por token**, razonador híbrido pensado para **agentes on-device y locales** (DGX Spark, MacBook Apple Silicon, Mac mini) sin GPUs de datacenter.
 
+
+> **Estado en ia-lab (2026-11-11):** instalado y recomendado para documentos largos con agujas y tareas duras.
+
 ## Highlights
 
 - **MoE diminuto en activos, grande en capacidad**: 128 expertos enrutados (8 activos + 1 compartido por token) — con 1.3B activos rinde cerca de densos de 3–4B y supera en agentes a modelos mucho mayores.
@@ -39,9 +42,15 @@ Comparativa con valores de Artificial Analysis (misma harness, comparables entre
 
 Lectura rápida: con solo 1.3B activos empata con [[models/minicpm5-2b|MiniCPM5-2B]] en contexto largo y agentes (τ³ 20.8) y lo supera en GPQA (73.4 frente a 70.2); frente a [[models/qwen3.5-4b|Qwen3.5-4B]] gana en agentes y contexto largo pero pierde en conocimiento amplio y código científico. Es solo-texto: si hace falta visión, Qwen3.5-4B o [[models/gemma-4-e4b|Gemma-4-E4B]] siguen siendo la opción.
 
-### Artificial Analysis (medición independiente, consultado 2026-09-21)
+### Artificial Analysis: última versión (consultado 2026-11-11)
 
-- [Página del modelo en AA](https://artificialanalysis.ai/models/ling-3-0-tiny): Intelligence Index **11 (v4.3.2, según la copia de AA del 2026-10-15 en Wayback Machine)**, puesto #36/141; en la web actual AA muestra v5.0 sin valor (N/A). Velocidad 57 tok/s (mediana entre proveedores), precio $0.00/$0.00 por 1M tokens in/out (InclusionAI y Novita), latencia al primer token ~3.3 s, contexto 262K.
+- **AA Progress Index v1: 231** ([Ling 3.0 Tiny en AA](https://artificialanalysis.ai/models/ling-3-0-tiny)). Es el índice que AA usa ahora en la comparativa de modelos open source pequeños; no es comparable con el Intelligence Index v4.3.2.
+- **AA Intelligence Index v5.0.1: N/A** en la ficha del modelo.
+- **Histórico:** Intelligence Index v4.3.2 = 11, consultado vía Wayback el 2026-10-15.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
+
+- [Página del modelo en AA](https://artificialanalysis.ai/models/ling-3-0-tiny): Intelligence Index **11 (v4.3.2, según la copia de AA del 2026-10-15 en Wayback Machine)**, puesto #36/141; en la web actual AA muestra v5.0 sin valor (N/A). Velocidad 57 tok/s (mediana entre proveedores), precio \$0.00/\$0.00 por 1M tokens in/out (InclusionAI y Novita), latencia al primer token ~3.3 s, contexto 262K.
 - La model card oficial declara **25 puntos en el índice v4.1.1** y **16 en el Agentic Index** (por encima incluso del Gemma-4-31B en agentes), con >160 tok/s y ~18 s end-to-end para 500 tokens incluyendo thinking. La diferencia con el 11 de v4.3.2 es cambio de versión del índice (v4.1.1 → v4.3.2), no del modelo — mismo patrón que [[models/gemma-4-e4b|Gemma-4-E4B]]/[[models/gemma-4-e2b|Gemma-4-E2B]].
 - Lectura: en v4.3.2 queda por debajo de [[models/qwen3.5-4b|Qwen3.5-4B]] (13) y [[models/minicpm5-2b|MiniCPM5-2B]] (12) en índice compuesto. Es rapidísimo por API (132–172 tok/s en InclusionAI) pero muy verboso en el índice (230M tokens, según la misma copia).
 

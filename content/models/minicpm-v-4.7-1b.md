@@ -4,6 +4,9 @@ title: MiniCPM-V-4.7-1B
 
 Variante de 1B de la familia [MiniCPM-V 4.7](https://huggingface.co/openbmb/MiniCPM-V-4.7-1B) (OpenBMB), modelo multimodal de imagen, multi-imagen y vídeo publicado en Hugging Face como [openbmb/MiniCPM-V-4.7-1B](https://huggingface.co/openbmb/MiniCPM-V-4.7-1B). Pensado para visión local en dispositivos o GPU modesta. La otra variante de la serie es el 35B-A3B MoE.
 
+
+> **Estado en ia-lab (2026-11-11):** probado; no instalado actualmente. Se sirve como dos perfiles (visión sin tools / tools sin visión).
+
 ## Highlights
 
 - **Visión + texto en un 1B**: comprensión de imagen única, multi-imagen y vídeo. El vendor lo sitúa por encima de Qwen3.5-0.8B en puntuación global y eficiencia de inferencia.
@@ -39,7 +42,12 @@ Comparativa según la tabla oficial de la model card, modo Instruct, con compres
 
 Lectura rápida: gana a los comparables de su tamaño en casi todo lo general, OCR y alucinación; en MMMU queda por detrás de Gemma-4-E2B, que tiene 5.1B. En la tabla oficial también aparece MiniCPM-V-4.6 (1.3B) con MathVista 75.50 y OmniDocBench 86.93, por encima del 4.7 en esos dos benchmarks.
 
-### Artificial Analysis (medición independiente, consultado 2026-11-01)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **Sin entrada en AA**: no hay página para este modelo en la comparativa de modelos open source; no hay Progress Index v1 ni Intelligence Index v5.0.1 que citar.
+- **Histórico:** tampoco existía un valor v4.3.2 para este modelo en el wiki.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 - **Sin entrada**: ni en la web actual ni en las copias de Wayback (15 oct, 1 nov y 1 oct 2026) hay página para MiniCPM-V-4.7-1B (los slugs dan 404). ia-lab también lo marca como "sin página en AA" (`MODELS.md`).
 

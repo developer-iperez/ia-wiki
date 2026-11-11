@@ -4,6 +4,9 @@ title: NeoHorse-1-4B
 
 Modelo de [TokenRhythm](https://huggingface.co/TokenRhythm), publicado en Hugging Face como [TokenRhythm/NeoHorse-1-4B](https://huggingface.co/TokenRhythm/NeoHorse-1-4B) (con variante GGUF en [TokenRhythm/NeoHorse-1-4B-GGUF](https://huggingface.co/TokenRhythm/NeoHorse-1-4B-GGUF)). Es un post-entreno agéntico de [Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B) orientado a harnesses de agentes, uso de herramientas, código y seguimiento de instrucciones, con solo pesos de texto (sin visión). Se presenta como prototipo hacia la auto-mejora recursiva; ver el [informe técnico (arXiv 2609.08183)](https://arxiv.org/abs/2609.08183).
 
+
+> **Estado en ia-lab (2026-11-11):** probado y descartado el 2026-10-11. Clon funcional de Qwen3.5-4B sin nicho propio; el cara a cara de calidad nunca se hizo.
+
 ## Highlights
 
 - **Post-entreno agéntico sobre Qwen3.5-4B**: parte del mismo checkpoint base y arquitectura que Qwen3.5-4B, con fine-tuning orientado a trayectorias de agente, tool-use y código.
@@ -39,7 +42,12 @@ Valores del vendor (model card de TokenRhythm), no reproducidos de forma indepen
 
 Lectura rápida: mejora frente a su base Qwen3.5-4B en casi todas las filas del vendor, con el mayor salto en agentes (VitaBench +10,50, WorkBuddy +9,79) y en tau2-Bench; en BFCL v4 la mejora es marginal (+0,77) y en código y tool-use puro queda por detrás de Nanbeige-4.2-3B. Los datos de otras filas (QwenClawBench, WorkBuddy, VitaBench, HumanEval, IFBench) están en la model card.
 
-### Artificial Analysis (medición independiente, consultado 2026-11-01)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **Sin entrada en AA**: no hay página para este modelo en la comparativa de modelos open source; no hay Progress Index v1 ni Intelligence Index v5.0.1 que citar.
+- **Histórico:** tampoco existía un valor v4.3.2 para este modelo en el wiki.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 No hay página de NeoHorse-1-4B en Artificial Analysis: el slug `neohorse-1-4b` devuelve 404 en la web actual y en las copias de Wayback (15 oct, 1 nov y 1 oct 2026). Por tanto no hay Intelligence Index ni métricas independientes; la entrada del menú de AA queda como "—".
 

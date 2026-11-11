@@ -4,6 +4,9 @@ title: Qwen3.5-9B
 
 Modelo de la familia [Qwen3.5](https://qwen.ai/blog?id=qwen3.5) (Alibaba), publicado en Hugging Face como [Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B). Es un modelo denso de ~9B pensado para ejecución local en una GPU de consumo y para agentes con tool-use, con capacidad de entrada de imagen y vídeo además de texto.
 
+
+> **Estado en ia-lab (2026-11-11):** probado y descartado el 2026-10-11. Pesado y lento (~3-7 t/s); K2-Horizon-3.7B y Qwen3.6 lo superan.
+
 ## Highlights
 
 - **Arquitectura híbrida**: bloques Gated DeltaNet (atención lineal) combinados con Gated Attention en proporción 3:1, con FFN tras cada bloque. Esto reduce el coste de atención en contextos largos frente a una pila de atención completa.
@@ -39,10 +42,16 @@ Comparativa según la model card oficial (valores del vendor, no reproducidos de
 
 Lectura rápida: según el vendor, destaca en conocimiento, ciencia, instrucciones, contexto largo y tool-use frente a los comparables de su tabla; en código (LiveCodeBench v6) queda por detrás de GPT-OSS-20B. La tabla oficial incluye también visión (p. ej. MMMU 78.4, OmniDocBench1.5 87.7) y multilingüe, no reproducidos aquí.
 
-### Artificial Analysis (medición independiente, consultado 2026-11-01)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **AA Progress Index v1: 240 (reasoning) / 225 (non-reasoning)** ([Qwen3.5 9B en AA](https://artificialanalysis.ai/models/qwen3-5-9b)). Es el índice que AA usa ahora en la comparativa de modelos open source pequeños; no es comparable con el Intelligence Index v4.3.2.
+- **AA Intelligence Index v5.0.1: N/A** en la ficha del modelo.
+- **Histórico:** Intelligence Index v4.3.2 = 11 / 13 (estimado), consultado vía Wayback el 2026-10-15.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 - **Intelligence Index v4.3.2: 11** (copia de AA del 2026-10-15 en Wayback Machine, variante *reasoning*; existe también *non-reasoning*). La [página actual](https://artificialanalysis.ai/models/qwen3-5-9b) muestra el índice v5.0 como N/A.
-- Datos de la misma ficha: 9.7B parámetros totales, 262k de ventana, texto+imagen+vídeo de entrada, Apache 2.0, ~61 tokens/s de salida y $0.14 / $0.20 por millón de tokens entrada/salida (mediana de proveedores).
+- Datos de la misma ficha: 9.7B parámetros totales, 262k de ventana, texto+imagen+vídeo de entrada, Apache 2.0, ~61 tokens/s de salida y \$0.14 / \$0.20 por millón de tokens entrada/salida (mediana de proveedores).
 
 ## Configuración recomendada
 

@@ -4,6 +4,9 @@ title: Granite-4.2-3B
 
 Modelo compacto de razonamiento de la familia [Granite 4.2](https://huggingface.co/ibm-granite/granite-4.2-3b) (IBM Granite Team, agosto 2026), publicado en Hugging Face como [ibm-granite/granite-4.2-3b](https://huggingface.co/ibm-granite/granite-4.2-3b). Con solo 3B de parámetros densos y razonamiento chain-of-thought nativo, está pensado para **razonamiento, código y agentes on-device**: 128K de contexto nativo (ampliable a 512K) y tres modos de thinking para equilibrar profundidad y latencia.
 
+
+> **Estado en ia-lab (2026-11-11):** probado en 2026-08-26; no instalado actualmente. El 8B de la misma familia se probó y descartó por KV cara.
+
 ## Highlights
 
 - **Razonamiento nativo con tres modos**: thinking completo (por defecto), non-thinking y low-effort, conmutables por petición vía `enable_thinking` / `low_effort` en la chat template.
@@ -40,10 +43,16 @@ Comparativa (según la model card oficial; los valores con * vienen de las model
 
 Lectura rápida: el mejor compacto del wiki en agentes (τ³-bench duplica al Spark 1.7B), código e instrucciones; en contexto largo nativo (128K, 512K extendido) queda por detrás del 1M de Spark-X2.5, y con 12 idiomas testados frente a los 200+ de Spark. Para matemáticas puras sigue por encima de [[models/lfm2.5-2.6b|LFM2.5-2.6B]].
 
-### Artificial Analysis (medición independiente, consultado 2026-09-09)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **AA Progress Index v1: 191** ([Granite 4.2 3B en AA](https://artificialanalysis.ai/models/granite-4-2-3b)). Es el índice que AA usa ahora en la comparativa de modelos open source pequeños; no es comparable con el Intelligence Index v4.3.2.
+- **AA Intelligence Index v5.0.1: 5** en la ficha del modelo.
+- **Histórico:** Intelligence Index v4.3.2 = 9, consultado vía Wayback el 2026-10-15.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 - [Página del modelo en AA](https://artificialanalysis.ai/models/granite-4-2-3b): Intelligence Index **9 (v4.3)**, puesto #3/47 en clase tiny (mediana 6); en v4.1.1 había marcado 14.
-- Rendimiento/precio AA: **214.9 tok/s (#1/47)** con latencia 0.46 s, coste ~$0.01 por tarea del índice ($0.03/$0.12 por 1M in/out); a cambio es verboso (92M tokens frente a 74M de mediana).
+- Rendimiento/precio AA: **214.9 tok/s (#1/47)** con latencia 0.46 s, coste ~\$0.01 por tarea del índice (\$0.03/\$0.12 por 1M in/out); a cambio es verboso (92M tokens frente a 74M de mediana).
 - Lectura: AA lo coloca por encima de LFM2.5-2.6B (8) pero por debajo de MiniCPM5-2B (12) en índice, y confirma su punto fuerte como el tiny más rápido para servir por API.
 
 ## Configuración recomendada

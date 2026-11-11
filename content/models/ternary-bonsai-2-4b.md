@@ -4,6 +4,9 @@ title: Ternary-Bonsai-2-4B
 
 Modelo de la familia [Bonsai 2 Small](https://huggingface.co/collections/prism-ml/bonsai-2-small) (PrismML), publicado en Hugging Face como [prism-ml/Ternary-Bonsai-2-4B-gguf](https://huggingface.co/prism-ml/Ternary-Bonsai-2-4B-gguf). Es un modelo de visión y lenguaje de ~4B con pesos ternarios {-1, 0, +1}, derivado de Qwen3.5-4B, pensado para ejecución local en una GPU modesta o en portátil.
 
+
+> **Estado en ia-lab (2026-11-11):** probado; no instalado actualmente. El empaquetado conservado de la familia es el 27B PTQ1_0.
+
 ## Highlights
 
 - **Pesos ternarios con escala por grupo**: embeddings, proyecciones de atención, MLP y LM head (atado) en ternario con escala FP16 por grupo; normalizaciones y el camino de estado lineal en F32.
@@ -34,7 +37,11 @@ La ficha oficial de Hugging Face **no publica tablas de benchmarks de calidad** 
 | Prompt (pp512), medido localmente | ~186 t/s | ~98 t/s |
 | Generación (tg128), medido localmente | ~52 t/s | ~28 t/s |
 
-Artificial Analysis: no tiene página para este modelo (`/models/ternary-bonsai-2-4b` responde 404 el 2026-11-01), así que no hay medición independiente.
+### Artificial Analysis (consultado 2026-11-11)
+
+- **Sin entrada en AA**: el slug `/models/ternary-bonsai-2-4b` sigue devolviendo 404; no hay Progress Index v1 ni Intelligence Index v5.0.1 que citar.
+- **Histórico:** tampoco existía un valor v4.3.2 cuando se añadió el modelo (2026-10-16).
+
 
 Lectura rápida: no hay una comparativa de calidad publicada que permita situarlo frente a otros 4B; el dato técnico fuerte es el contexto nativo de 262K y que la generación en GPU es aproximadamente el doble que la del 9B. Cualquier afirmación de calidad habrá que medirla en casa.
 

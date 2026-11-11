@@ -4,6 +4,9 @@ title: Gemma 4 26B-A4B
 
 Modelo MoE de la familia [Gemma 4](https://huggingface.co/collections/google/gemma-4) (Google DeepMind), publicado en Hugging Face como [google/gemma-4-26B-A4B](https://huggingface.co/google/gemma-4-26B-A4B). Es la variante de tamaño medio-grande orientada a servidores y workstations de consumo: con 25,2B totales pero solo 3,8B activos por token, responde casi a la velocidad de un 4B, con calidad cercana al denso 31B.
 
+
+> **Estado en ia-lab (2026-11-11):** instalado y mantenido como opción pesada para 262K; Qwen3.6-35B-A3B lo supera en calidad/contexto y es el recomendado.
+
 ## Highlights
 
 - **MoE con pocos activos**: 128 expertos con 8 activos por token más 1 compartido; 25,2B totales y 3,8B activos. Según el vendor, corre casi tan rápido como un modelo de 4B.
@@ -39,10 +42,16 @@ Comparativa según la model card oficial de Google (valores del vendor, tabla de
 
 Lectura rápida: frente al 31B denso pierde poco en conocimiento, ciencia y matemáticas (1–3 puntos), algo más en código (−3), y se queda más atrás en agentes (Tau2, −9) y en contexto largo (MRCR, −22), donde el 31B lo supera con holgura; a cambio, con 3,8B activos, su coste de inferencia es muy inferior. Frente a la generación anterior (Gemma 3 27B) mejora de forma clara en todo lo de razonamiento y código.
 
-### Artificial Analysis (medición independiente, consultado 2026-11-01)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **AA Progress Index v1: 243 (reasoning) / 219 (non-reasoning)** ([Gemma 4 26B A4B en AA](https://artificialanalysis.ai/models/gemma-4-26b-a4b)). Es el índice que AA usa ahora en la comparativa de modelos open source pequeños; no es comparable con el Intelligence Index v4.3.2.
+- **AA Intelligence Index v5.0.1: N/A** en la ficha del modelo.
+- **Histórico:** Intelligence Index v4.3.2 = 17 (estimado) / 13 (estimado), consultado vía Wayback el 2026-10-15.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 - **Intelligence Index v4.3.2: 17 (estimado por AA)** para la variante *reasoning* y **13 (estimado)** para *non-reasoning* (copia de AA del 2026-10-15 en Wayback Machine). En la web actual ambas muestran el índice v5.0 como N/A.
-- Datos que AA publica hoy: 25,2B totales / 3,8B activos, contexto 256K, licencia Apache 2.0, velocidad de salida ~100 tok/s (reasoning) y ~119 tok/s (non-reasoning), precio ~$0,10 / $0,34 por millón de tokens de entrada/salida (reasoning).
+- Datos que AA publica hoy: 25,2B totales / 3,8B activos, contexto 256K, licencia Apache 2.0, velocidad de salida ~100 tok/s (reasoning) y ~119 tok/s (non-reasoning), precio ~\$0,10 / \$0,34 por millón de tokens de entrada/salida (reasoning).
 
 ## Configuración recomendada
 

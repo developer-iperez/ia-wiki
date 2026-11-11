@@ -4,6 +4,9 @@ title: K2-Horizon-3.7B
 
 Modelo de la familia [K2-Horizon](https://huggingface.co/collections/IFM/k2-horizon) del Institute of Foundation Models (IFM), publicado en Hugging Face como [IFM/K2-Horizon-3.7B](https://huggingface.co/IFM/K2-Horizon-3.7B) y en formato GGUF como [IFM/K2-Horizon-3.7B-GGUF](https://huggingface.co/IFM/K2-Horizon-3.7B-GGUF). En local usamos el fichero `K2-Horizon-4B-Q4_K_M.gguf` (2,94 GiB) de esa ficha oficial; el nombre "4B" es del fichero, el modelo es de 3,7B de núcleo denso. Es el miembro pequeño de la familia, pensado para agente y código en ventana corta en una GPU de consumo.
 
+
+> **Estado en ia-lab (2026-11-11):** probado; no instalado actualmente. Su rol de denso de ventana corta lo cubren K2-Horizon-7B (purgado) y Ternary-Bonsai-2-27B.
+
 ## Highlights
 
 - **Denso pequeño con contexto nativo de 512K**: 524.288 tokens nativos desde las fases de midtraining; la arquitectura `k2-horizon` es nueva en llama.cpp y requiere build ≥ b11454.
@@ -39,7 +42,13 @@ Comparativa según la ficha GGUF oficial (valores del vendor, en %). La columna 
 
 Lectura rápida: destaca en mates y en SWE-bench Verified frente a comparables de 3–4B; en GPQA queda por detrás de Qwen3.5-4B y en tool-use (BFCL) también. Atención: la ficha GGUF cuantizada muestra caídas frente a BF16 (AIME avg 74,1 vs 91,6; GPQA 58,5 vs 68,6), así que estas cifras son del BF16 o de la ficha general, no del Q4_K_M en local.
 
-### Artificial Analysis (medición independiente, consultado 2026-11-01)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **AA Progress Index v1: 242** ([K2 Horizon 3.7B en AA](https://artificialanalysis.ai/models/k2-horizon-3-7b)). Es el índice que AA usa ahora en la comparativa de modelos open source pequeños; no es comparable con el Intelligence Index v4.3.2.
+- **AA Intelligence Index v5.0.1: N/A** en la ficha del modelo.
+- **Histórico:** Intelligence Index v4.3.2 = 16, consultado vía Wayback el 2026-10-15.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 - **Intelligence Index v4.3.2: 16** (copia de AA del 2026-10-15 en Wayback Machine). AA lo lista como *K2 Horizon 3.7B* (slug `k2-horizon-3-7b`; `k2-horizon-4b` devuelve 404). En la web actual el índice v5.0 aparece como N/A.
 - Según la misma página: 3,7B, texto→texto, 524K de contexto, Apache 2.0, reasoning y open weights.

@@ -6,6 +6,9 @@ Modelo de la familia [Gemma 4](https://huggingface.co/collections/google/gemma-4
 
 > Nota: no existe ningún "Gemma 4 E3B". La familia E solo tiene dos miembros: [[models/gemma-4-e2b|Gemma-4-E2B]] (2.3B efectivos) y este E4B (4.5B efectivos).
 
+
+> **Estado en ia-lab (2026-11-11):** instalado y mantenido para respuestas directas/multimodal. Una nota histórica de 2026-10-11 lo daba por borrado; el inventario de 2026-11-01 lo vuelve a incluir (4,64 GiB).
+
 ## Highlights
 
 - **Parámetros "efectivos" (Per-Layer Embeddings)**: cada capa del decoder tiene su propio embedding pequeño por token; las tablas son grandes pero solo sirven para lookups, de ahí que el conteo efectivo (4.5B) sea mucho menor que el total (8B).
@@ -45,9 +48,15 @@ Comparativa según la model card oficial (modelos instructivos, valores del vend
 
 Lectura rápida: supera a Gemma 3 27B en casi todo salvo MMLU-Pro/MMMLU puros, con un salto grande en código (LiveCodeBench 52.0 frente a 29.1) y agentes (τ² 42.2 frente a 16.2); frente a [[models/gemma-4-e2b|Gemma-4-E2B]] gana en todas las filas a cambio de ~2× memoria (~3.65 GB el modelo frente a ~2.58 GB). Es la única opción compacta del wiki con visión + audio nativos; en texto puro y contexto de 1M, [[models/spark-x2.5-4b|Spark-X2.5-4B]] o [[models/qwen3.5-4b|Qwen3.5-4B]] siguen por delante en contexto largo.
 
-### Artificial Analysis (medición independiente, consultado 2026-09-21)
+### Artificial Analysis: última versión (consultado 2026-11-11)
 
-- [Página del modelo en AA (reasoning)](https://artificialanalysis.ai/models/gemma-4-e4b): Intelligence Index **9 (estimado, v4.3.2)**, puesto #51/142; velocidad ~42 tok/s (mediana DeepInfra, único proveedor API), precio $0.02/$0.10 por 1M tokens in/out, latencia al primer token ~0.85 s.
+- **AA Progress Index v1: 183 (reasoning) / 177 (non-reasoning)** ([Gemma 4 E4B en AA](https://artificialanalysis.ai/models/gemma-4-e4b)). Es el índice que AA usa ahora en la comparativa de modelos open source pequeños; no es comparable con el Intelligence Index v4.3.2.
+- **AA Intelligence Index v5.0.1: N/A** en la ficha del modelo.
+- **Histórico:** Intelligence Index v4.3.2 = 9 (estimado) / 7 (estimado), consultado vía Wayback el 2026-10-15.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
+
+- [Página del modelo en AA (reasoning)](https://artificialanalysis.ai/models/gemma-4-e4b): Intelligence Index **9 (estimado, v4.3.2)**, puesto #51/142; velocidad ~42 tok/s (mediana DeepInfra, único proveedor API), precio \$0.02/\$0.10 por 1M tokens in/out, latencia al primer token ~0.85 s.
 - [Variante non-reasoning](https://artificialanalysis.ai/models/gemma-4-e4b-non-reasoning): Intelligence Index **7 (estimado, v4.3.2)**, puesto #20/75 de su clase, ~43 tok/s.
 - En el [artículo de lanzamiento de AA](https://artificialanalysis.ai/articles/gemma-4-everything-you-need-to-know) (abril 2026, metodología anterior) el E4B reasoning marcó **19 puntos** (+13 sobre Gemma 3n E4B), con AA-Omniscience −20 — mejor (menos alucinación) que el 31B (−45) y a la par de modelos mucho mayores. La diferencia con el 9 actual es cambio de versión del índice, no del modelo.
 - Lectura: AA confirma el perfil del vendor (razonador compacto y barato, poco verboso en tokens), pero con índice compuesto por debajo de [[models/minicpm5-2b|MiniCPM5-2B]] (12) e igualado con [[models/granite-4.2-3b|Granite-4.2-3B]] (9); su ventaja diferencial es la multimodalidad (imagen+audio) que esos modelos no tienen.

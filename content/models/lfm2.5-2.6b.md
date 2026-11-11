@@ -4,6 +4,9 @@ title: LFM2.5-2.6B
 
 Modelo de la familia [LFM2.5](https://www.liquid.ai/blog/lfm2-5-2-6b) (Liquid AI), publicado en Hugging Face como [LiquidAI/LFM2.5-2.6B](https://huggingface.co/LiquidAI/LFM2.5-2.6B). Es un modelo híbrido pensado para **despliegue on-device** (edge): agentes, uso de herramientas y flujos de contexto largo en hardware modesto (CPU de portátil, incluso teléfono).
 
+
+> **Estado en ia-lab (2026-11-11):** probado; no instalado actualmente. Liquid AI lo sustituye por LFM3-1.7B (más rápido, 131K y tools).
+
 ## Highlights
 
 - **Arquitectura híbrida LFM2**: 30 capas — 22 bloques de convolución corta con "double gating" + 8 bloques de atención GQA — orientada a inferencia rápida y bajo consumo de memoria.
@@ -38,7 +41,13 @@ Comparativa (según la model card oficial) frente a otros modelos sub-10B:
 
 Lectura rápida: con menos de un tercio de los parámetros de Qwen3.5-9B, LFM2.5-2.6B iguala o supera a modelos bastante más grandes en instrucciones y uso de herramientas/agentes, aunque se queda algo por debajo en código y matemáticas puras. Los propios autores no lo recomiendan para programación agéntica ni tareas intensivas en conocimiento.
 
-### Artificial Analysis (medición independiente, consultado 2026-09-09)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **AA Progress Index v1: 171** ([LFM2.5-2.6B en AA](https://artificialanalysis.ai/models/lfm2-5-2-6b)). Es el índice que AA usa ahora en la comparativa de modelos open source pequeños; no es comparable con el Intelligence Index v4.3.2.
+- **AA Intelligence Index v5.0.1: N/A** en la ficha del modelo.
+- **Histórico:** Intelligence Index v4.3.2 = 8 (estimado), consultado vía Wayback el 2026-10-15.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 - [Página del modelo en AA](https://artificialanalysis.ai/models/lfm2-5-2-6b): Intelligence Index **8 (estimado, v4.3)**, puesto #8/47 en clase tiny (≤4B, mediana 6); velocidad ~200 tok/s (#2/47), precio $0.00/1M (vía API de Liquid).
 - En el [estudio de AA en móvil](https://artificialanalysis.ai/articles/mobile-phone-intelligence-inference) (iPhone 17 Pro, límite 16K) comparte la mejor nota media (63) con Nanbeige4.2-3B: destaca en IFBench (59%, el mejor en móvil), MATH-500 (>90%) y no-alucinación (79% frente a ~33% de Nanbeige y ~24%/1% de los Qwen3.5 9B).

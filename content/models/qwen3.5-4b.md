@@ -4,6 +4,9 @@ title: Qwen3.5-4B
 
 Modelo de la familia [Qwen3.5](https://qwen.ai/blog?id=qwen3.5) (Alibaba), publicado en Hugging Face como [Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B). Es multimodal (texto + imagen + vídeo → texto) y, dentro de la familia, es el tamaño más pequeño pensado para ejecución local en una sola GPU modesta.
 
+
+> **Estado en ia-lab (2026-11-11):** probado; no instalado actualmente. Su papel de cerebro diario lo cubre Qwen3.6-35B-A3B.
+
 ## Highlights
 
 - **Base visión-lenguaje unificada**: entrenamiento con fusión temprana de tokens multimodales — a diferencia de generaciones anteriores (Qwen3-VL), donde la parte visual se añadía después, aquí texto e imagen se entrenan de forma conjunta desde el principio.
@@ -39,9 +42,15 @@ Comparativa (según la model card oficial) frente a otros modelos de tamaño sim
 
 Lectura rápida: para su tamaño (4B), rinde notablemente bien en instrucciones y contexto largo, algo por debajo de su hermano de 9B en razonamiento/código duro (esperable), y es la única de las tres comparadas con capacidad visual nativa.
 
-### Artificial Analysis (medición independiente, consultado 2026-09-09)
+### Artificial Analysis: última versión (consultado 2026-11-11)
 
-- [Página del modelo en AA](https://artificialanalysis.ai/models/qwen3-5-4b): Intelligence Index **13 (estimado, v4.3.2; copia de AA del 2026-10-15 en Wayback Machine)**, puesto #28/140 de su clase; velocidad 27 tok/s, precio ~$0.03/$0.15 por 1M tokens in/out.
+- **AA Progress Index v1: 231 (reasoning) / 212 (non-reasoning)** ([Qwen3.5 4B en AA](https://artificialanalysis.ai/models/qwen3-5-4b)). Es el índice que AA usa ahora en la comparativa de modelos open source pequeños; no es comparable con el Intelligence Index v4.3.2.
+- **AA Intelligence Index v5.0.1: N/A** en la ficha del modelo.
+- **Histórico:** Intelligence Index v4.3.2 = 13 (estimado) / 11 (estimado), consultado vía Wayback el 2026-10-15.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
+
+- [Página del modelo en AA](https://artificialanalysis.ai/models/qwen3-5-4b): Intelligence Index **13 (estimado, v4.3.2; copia de AA del 2026-10-15 en Wayback Machine)**, puesto #28/140 de su clase; velocidad 27 tok/s, precio ~\$0.03/\$0.15 por 1M tokens in/out.
 - En el [artículo de AA sobre los Qwen3.5 pequeños](https://artificialanalysis.ai/articles/qwen3-5-small-models) (metodología v4.1, marzo 2026) obtuvo **27 puntos**, descrito como el más inteligente por debajo de 5B; el 9B llegó a 32.
 - Desglose AA (v4.1, variante reasoning): GPQA Diamond 77.1, HLE 7.8, IFBench 52.0, AA-LCR 55.7, SciCode ~16–18, τ³-Banking 8.2, τ²-Telecom 92.1, Terminal-Bench v2.1 25.8, MMMU-Pro (visión) 65.4.
 - Lectura: AA confirma el perfil de la model card (fuerte en conocimiento GPQA, tool-use τ² y contexto largo), pero con IFBench (52.0) y τ³-Banking (8.2) más bajos que los valores del vendor — normal al ser harnesses distintos.

@@ -4,6 +4,9 @@ title: Qwen3.6-35B-A3B
 
 Modelo MoE de la familia [Qwen3.6](https://huggingface.co/collections/Qwen/qwen36) (Alibaba / Qwen Team), publicado como primer peso abierto de la serie 3.6 en [Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B) y en el [blog de Qwen](https://qwen.ai/blog?id=qwen3.6-35b-a3b). Tiene 35B totales con 3B activos por token, pensado para agentes de código y uso de herramientas en local con una GPU de consumo más RAM de sistema.
 
+
+> **Estado en ia-lab (2026-11-11):** instalado y recomendado como techo de calidad local (131K/262K, ~33 t/s híbrido).
+
 ## Highlights
 
 - **Enfoque en código agentico**: según la ficha oficial, mejora el trabajo con flujos de frontend y razonamiento a nivel de repositorio; el release prioriza estabilidad y utilidad real frente a la versión 3.5.
@@ -39,10 +42,16 @@ Valores del vendor (ficha oficial de Hugging Face / blog de Qwen), no reproducid
 
 Lectura rápida: destaca en código agentico y terminal frente a su predecesor (SWE-bench Verified 73.4 y Terminal-Bench 51.5) y compite de tú a tú con el denso Qwen3.5-27B en conocimiento y mates; en TAU3-Bench queda ligeramente por debajo del 3.5-35B-A3B y del 27B denso.
 
-### Artificial Analysis (medición independiente, consultado 2026-11-01)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **AA Progress Index v1: 261 (reasoning) / 246 (non-reasoning)** ([Qwen3.6 35B A3B en AA](https://artificialanalysis.ai/models/qwen3-6-35b-a3b)). Es el índice que AA usa ahora en la comparativa de modelos open source pequeños; no es comparable con el Intelligence Index v4.3.2.
+- **AA Intelligence Index v5.0.1: N/A** en la ficha del modelo.
+- **Histórico:** Intelligence Index v4.3.2 = 18, consultado vía Wayback el 2026-10-15.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 - **Intelligence Index v4.3.2: 18** (copia de AA del 2026-10-15 en Wayback Machine, variante *reasoning*). La [página actual](https://artificialanalysis.ai/models/qwen3-6-35b-a3b) muestra el índice v5.0 como N/A.
-- Datos de AA visibles hoy: 36B totales / 3B activos, contexto 262k, texto+imagen+vídeo de entrada, licencia Apache 2.0, ~133 tokens/s en la API de Alibaba (precio $0.38 entrada / $2.25 salida por millón).
+- Datos de AA visibles hoy: 36B totales / 3B activos, contexto 262k, texto+imagen+vídeo de entrada, licencia Apache 2.0, ~133 tokens/s en la API de Alibaba (precio \$0.38 entrada / \$2.25 salida por millón).
 
 ## Configuración recomendada
 

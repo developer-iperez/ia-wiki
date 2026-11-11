@@ -4,6 +4,9 @@ title: MiniCPM5-2B
 
 Modelo de la familia [MiniCPM5](https://huggingface.co/collections/openbmb/minicpm5) (OpenBMB), publicado en Hugging Face como [openbmb/MiniCPM5-2B](https://huggingface.co/openbmb/MiniCPM5-2B). Es el segundo modelo de la serie tras el MiniCPM5-1B, un denso de ~2.5B pensado para asistente local, agentes de código y tool-use en dispositivos o GPU modesta.
 
+
+> **Estado en ia-lab (2026-11-11):** probado; no instalado actualmente. El inventario conserva MiniCPM5-1B por velocidad; el 2B sigue siendo el equilibrio con thinking.
+
 ## Highlights
 
 - **Denso pequeño con receta escalada**: mismo entrenamiento que el 1B pero con más capacidad; arquitectura estándar `LlamaForCausalLM`, sin kernels custom ni fork del modelo.
@@ -41,7 +44,13 @@ Comparativa según la model card oficial (valores del vendor, reproducidos inter
 
 Lectura rápida: domina con claridad su rango de 2B en código, mates, contexto largo y agentes (SWE-bench, GAIA 88.7); en conocimiento general amplio (MMLU-Pro) queda por debajo del Qwen3.5-4B, y en IFEval puro lo supera LFM2.5-2.6B. Promedio reportado 53.9, por encima de los 4B incluidos en su tabla.
 
-### Artificial Analysis (medición independiente, consultado 2026-09-09)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **AA Progress Index v1: 221** ([MiniCPM5-2B en AA](https://artificialanalysis.ai/models/minicpm5-2b)). Es el índice que AA usa ahora en la comparativa de modelos open source pequeños; no es comparable con el Intelligence Index v4.3.2.
+- **AA Intelligence Index v5.0.1: N/A** en la ficha del modelo.
+- **Histórico:** Intelligence Index v4.3.2 = 12, consultado vía Wayback el 2026-10-15.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 - [Página del modelo en AA](https://artificialanalysis.ai/models/minicpm5-2b): Intelligence Index **12 (v4.3.2, según la copia de AA del 2026-10-15 en Wayback Machine)**; en la web actual AA muestra v5.0 sin valor (N/A). Según el índice v4.3, marcó 13 y, en v4.2, 15.
 - Los valores con † en la tabla de arriba vienen ya del release oficial de AA según el vendor: SciCode 26.3, HLE 8.9, GPQA-Diamond 70.2, AA-LCR 59.0, τ³-Banking 20.8, Terminal-Bench v2.1 8.6, GDPval-AA v2 19.6. El resto (AIME, MATH-500, LiveCodeBench, SWE-bench, BFCL…) son reproducciones internas de OpenBMB, aún sin réplica externa fila a fila.

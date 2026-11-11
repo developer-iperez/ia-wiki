@@ -6,6 +6,9 @@ Modelo de la familia [Gemma 4](https://huggingface.co/collections/google/gemma-4
 
 > Nota: se incluye aquí porque no existe ningún "Gemma 4 E3B" — la familia E solo tiene [[models/gemma-4-e4b|Gemma-4-E4B]] (4.5B efectivos) y este E2B (2.3B efectivos).
 
+
+> **Estado en ia-lab (2026-11-11):** probado; no instalado actualmente. Su nicho on-device lo cubre Gemma-4-E4B (más contexto y tools).
+
 ## Highlights
 
 - **El Gemma 4 más pequeño y el único que cabe en un teléfono**: ~2.58 GB en 4-bit, ~48 tok/s en un ROG Phone 9 Pro; Google lo declara apto para Raspberry Pi y Jetson Orin Nano totalmente offline.
@@ -45,7 +48,13 @@ Comparativa según la model card oficial (modelos instructivos, valores del vend
 
 Lectura rápida: queda por debajo de [[models/gemma-4-e4b|Gemma-4-E4B]] en todas las filas (esperable con la mitad de parámetros efectivos), pero duplica o triplica a la generación anterior en código y agentes (Codeforces 633 frente a 110 de Gemma 3 27B; τ² 24.5 frente a 16.2). Frente a los solo-texto del wiki de tamaño similar ([[models/lfm2.5-2.6b|LFM2.5-2.6B]], [[models/spark-x2.5-1.7b|Spark-X2.5-1.7B]], [[models/minicpm5-2b|MiniCPM5-2B]]) su baza no es el texto puro sino ser el único con visión + audio nativos corriendo en un móvil.
 
-### Artificial Analysis (medición independiente, consultado 2026-09-21)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **AA Progress Index v1: 165 (reasoning) / 158 (non-reasoning)** ([Gemma 4 E2B en AA](https://artificialanalysis.ai/models/gemma-4-e2b)). Es el índice que AA usa ahora en la comparativa de modelos open source pequeños; no es comparable con el Intelligence Index v4.3.2.
+- **AA Intelligence Index v5.0.1: N/A** en la ficha del modelo.
+- **Histórico:** Intelligence Index v4.3.2 = 8 (estimado) / 6 (estimado), consultado vía Wayback el 2026-10-15.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 - [Página del modelo en AA (reasoning)](https://artificialanalysis.ai/models/gemma-4-e2b): Intelligence Index **8 (estimado, v4.3.2)**, puesto #67/142; sin velocidad ni precio publicados (modelo para self-host / on-device, sin proveedores API rastreados).
 - En el [artículo de lanzamiento de AA](https://artificialanalysis.ai/articles/gemma-4-everything-you-need-to-know) (abril 2026, metodología anterior) el E2B reasoning marcó **15 puntos** (+10 sobre Gemma 3n E2B), con AA-Omniscience −24 — mejor (menos alucinación) que el 31B (−45). La diferencia con el 8 actual es cambio de versión del índice, no del modelo.

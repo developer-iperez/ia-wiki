@@ -4,6 +4,9 @@ title: LFM3-1.7B
 
 Modelo de texto de [Liquid AI](https://huggingface.co/LiquidAI) de la familia [LFM3](https://huggingface.co/collections/LiquidAI/lfm3), publicado en Hugging Face como [LiquidAI/LFM3-1.7B](https://huggingface.co/LiquidAI/LFM3-1.7B). Está pensado para agentes locales, tool calling y salidas estructuradas en dispositivos o GPU modesta, y se basa en su nueva arquitectura tri-híbrida (convoluciones cortas, atención con ventana deslizante y atención global).
 
+
+> **Estado en ia-lab (2026-11-11):** instalado y recomendado como agente ligero ultra-rápido (1 GB, 131K, tools).
+
 ## Highlights
 
 - **Arquitectura tri-híbrida**: 24 capas con 13 convoluciones cortas con puertas, 5 de atención con ventana deslizante y 6 de atención global. Mezcla pensada para bajo coste de memoria en contexto largo.
@@ -41,7 +44,12 @@ Comparativa según la ficha oficial de Hugging Face (valores del vendor, reprodu
 
 Lectura rápida: según el vendor destaca en instrucciones, tool use y código para su tamaño, y en agentes (LiveClaw 45.60, por encima de Qwen3.5 9B con 35.77). Queda por detrás de Qwen3.5-4B en conocimiento científico (GPQA) y en RULER 128K, y en razonamiento difícil (HLE sin herramientas 7.17) está en el rango bajo. El vendor no recomienda el modelo para programación agéntica compleja ni para razonamiento multi-paso largo por su tamaño.
 
-### Artificial Analysis (medición independiente, consultado 2026-11-01)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **Sin entrada en AA**: no hay página para este modelo en la comparativa de modelos open source; no hay Progress Index v1 ni Intelligence Index v5.0.1 que citar.
+- **Histórico:** tampoco existía un valor v4.3.2 para este modelo en el wiki.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 Artificial Analysis **no tiene entrada** para LFM3-1.7B: el slug `lfm3-1-7b` devuelve 404 en la web actual y en las copias de Wayback (15 oct, 1 nov y 1 oct 2026). No hay Intelligence Index que citar en ninguna versión.
 

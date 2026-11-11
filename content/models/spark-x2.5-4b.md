@@ -4,6 +4,9 @@ title: Spark-X2.5-4B
 
 Modelo de la familia [Spark-X2.5](https://huggingface.co/XHToken/Spark-X2.5-4B) (XHToken / equipo SparkLLM, 2026), publicado en Hugging Face como [XHToken/Spark-X2.5-4B](https://huggingface.co/XHToken/Spark-X2.5-4B). Es un modelo compacto de propósito general orientado a **agentes y código on-device**: 4B de parámetros con 1M de contexto nativo, pensado para ejecución local en una sola GPU (también NPUs Ascend y Apple Silicon).
 
+
+> **Estado en ia-lab (2026-11-11):** probado y descartado el 2026-09-15. Dominado por Spark-X2.5-1.7B en tamaño, velocidad y contexto.
+
 ## Highlights
 
 - **Atención híbrida eficiente**: combina 1 capa de atención completa con 3 de sliding-window (SWA) — el equilibrio entre rendimiento, velocidad de inferencia y tamaño de KV-cache, con 1M de contexto nativo sin trucos de extrapolación.
@@ -41,7 +44,12 @@ Comparativa (según la model card oficial; los valores con * vienen de las model
 
 Lectura rápida: domina claramente en tareas agénticas, código multilingüe y matemáticas frente a Qwen3.5-4B, al que duplica o triplica en varios benchmarks de agentes; en contexto largo (AA-LCR) y conocimiento general (GPQA) queda a la par del 4B y por debajo del 9B. Es solo-texto: si hace falta visión, [[models/qwen3.5-4b|Qwen3.5-4B]] sigue siendo la opción.
 
-### Artificial Analysis (medición independiente, consultado 2026-09-09)
+### Artificial Analysis: última versión (consultado 2026-11-11)
+
+- **Sin entrada en AA**: no hay página para este modelo en la comparativa de modelos open source; no hay Progress Index v1 ni Intelligence Index v5.0.1 que citar.
+- **Histórico:** tampoco existía un valor v4.3.2 para este modelo en el wiki.
+
+### Histórico: Artificial Analysis v4.3.2 (consulta original)
 
 - **Sin entrada en Artificial Analysis**: a fecha de consulta no hay página de modelo ni puntuación en el Intelligence Index para Spark-X2.5-4B (búsqueda sin resultados en artificialanalysis.ai).
 - La tabla de arriba son por tanto solo valores del vendor (XHToken); pendientes de validación independiente.
