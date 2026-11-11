@@ -2,7 +2,7 @@
 title: OpenCode
 ---
 
-Notas sobre OpenCode V2, el agente de codificación open source de [Anomaly](https://opencode.ai/). Funciona como interfaz de terminal (TUI), aplicación de escritorio, interfaz web y CLI, y comparte un mismo servidor en segundo plano para sesiones, configuración, permisos y herramientas.
+Notas sobre OpenCode V2, el agente de codificación open source de [Anomaly](https://opencode.ai/). Funciona como interfaz de terminal (TUI), aplicación de escritorio, interfaz web y CLI, y comparte un mismo servidor en segundo plano para sesiones, configuración, permisos y herramientas. Forma parte de [[agentes/index|Agentes de codificación]].
 
 Esta sección sigue la misma estructura que la de [[claude/index|Claude]]: fundamentos, mecanismos de extensión y guías prácticas.
 

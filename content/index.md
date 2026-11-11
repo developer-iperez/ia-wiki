@@ -4,53 +4,9 @@ title: IA wiki
 
 Bienvenido a mi wiki de notas.
 
-## Claude
+## Agentes de codificación
 
-### [[claude/index|Claude Code y ecosistema]]
-
-#### [[claude/fundamentos/index|Fundamentos]]
-
-- [[claude/fundamentos/claude-code|Claude Code]]
-- [[claude/fundamentos/comandos|Comandos útiles de Claude Code]]
-- [[claude/fundamentos/modelos-claude|Familia de modelos Claude]]
-
-#### [[claude/extension/index|Extender Claude Code]]
-
-- [[claude/extension/skills|Skills de Claude]]
-- [[claude/extension/subagentes|Subagentes de Claude Code]]
-- [[claude/extension/hooks|Hooks de Claude Code]]
-- [[claude/extension/mcp|MCP (Model Context Protocol)]]
-
-#### [[claude/guias/index|Guías]]
-
-- [[claude/guias/claude-code-guide-zebbern|Claude Code Guide (zebbern)]]
-- [[claude/guias/claude-code-everything|Claude Code: Everything You Need to Know]]
-
-## OpenCode
-
-### [[opencode/index|OpenCode]]
-
-#### [[opencode/fundamentos/index|Fundamentos]]
-
-- [[opencode/fundamentos/opencode|Qué es OpenCode]]
-- [[opencode/fundamentos/cli-tui|CLI y TUI]]
-- [[opencode/fundamentos/configuracion|Configuración]]
-- [[opencode/fundamentos/modelos-proveedores|Modelos y proveedores]]
-- [[opencode/fundamentos/instrucciones|Instrucciones y AGENTS.md]]
-
-#### [[opencode/extension/index|Extender OpenCode]]
-
-- [[opencode/extension/agentes|Agentes y subagentes]]
-- [[opencode/extension/skills|Skills]]
-- [[opencode/extension/comandos|Comandos personalizados]]
-- [[opencode/extension/plugins|Plugins]]
-- [[opencode/extension/mcp|MCP]]
-- [[opencode/extension/permisos-politicas|Permisos y políticas]]
-
-#### [[opencode/guias/index|Guías]]
-
-- [[opencode/guias/flujo-de-trabajo|Flujo de trabajo diario]]
-- [[opencode/guias/desde-claude-code|De Claude Code a OpenCode]]
+- [[agentes/index|Agentes de codificación]] — Claude Code, OpenCode y otros agentes autónomos para trabajar dentro del repositorio.
 
 ## Modelos LLM open source (ejecución local)
 

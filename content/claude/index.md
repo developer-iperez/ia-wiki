@@ -2,7 +2,7 @@
 title: Claude
 ---
 
-Notas sobre Claude Code y su ecosistema.
+Notas sobre Claude Code y su ecosistema. Forma parte de [[agentes/index|Agentes de codificación]].
 
 ### [[claude/fundamentos/index|Fundamentos]]
 
