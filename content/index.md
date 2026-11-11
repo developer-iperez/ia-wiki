@@ -7,6 +7,8 @@ Bienvenido a mi wiki de notas.
 ## Agentes de codificación
 
 - [[agentes/index|Agentes de codificación]] — Claude Code, OpenCode y otros agentes autónomos para trabajar dentro del repositorio.
+  - [[agentes/claude/index|Claude Code]]
+  - [[agentes/opencode/index|OpenCode]]
 
 ## Modelos LLM open source (ejecución local)
 
