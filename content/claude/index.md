@@ -21,3 +21,5 @@ Notas sobre Claude Code y su ecosistema.
 
 - [[claude/guias/claude-code-guide-zebbern|Claude Code Guide (zebbern)]]
 - [[claude/guias/claude-code-everything|Claude Code: Everything You Need to Know]]
+
+¿Comparando con otro agente? [[opencode/guias/desde-claude-code|De Claude Code a OpenCode]] resume equivalencias y diferencias.

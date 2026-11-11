@@ -26,6 +26,32 @@ Bienvenido a mi wiki de notas.
 - [[claude/guias/claude-code-guide-zebbern|Claude Code Guide (zebbern)]]
 - [[claude/guias/claude-code-everything|Claude Code: Everything You Need to Know]]
 
+## OpenCode
+
+### [[opencode/index|OpenCode]]
+
+#### [[opencode/fundamentos/index|Fundamentos]]
+
+- [[opencode/fundamentos/opencode|Qué es OpenCode]]
+- [[opencode/fundamentos/cli-tui|CLI y TUI]]
+- [[opencode/fundamentos/configuracion|Configuración]]
+- [[opencode/fundamentos/modelos-proveedores|Modelos y proveedores]]
+- [[opencode/fundamentos/instrucciones|Instrucciones y AGENTS.md]]
+
+#### [[opencode/extension/index|Extender OpenCode]]
+
+- [[opencode/extension/agentes|Agentes y subagentes]]
+- [[opencode/extension/skills|Skills]]
+- [[opencode/extension/comandos|Comandos personalizados]]
+- [[opencode/extension/plugins|Plugins]]
+- [[opencode/extension/mcp|MCP]]
+- [[opencode/extension/permisos-politicas|Permisos y políticas]]
+
+#### [[opencode/guias/index|Guías]]
+
+- [[opencode/guias/flujo-de-trabajo|Flujo de trabajo diario]]
+- [[opencode/guias/desde-claude-code|De Claude Code a OpenCode]]
+
 ## Modelos LLM open source (ejecución local)
 
 - [[models/index|Comparativa de modelos open source]]
